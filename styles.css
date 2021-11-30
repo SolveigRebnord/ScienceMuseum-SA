@@ -1,6 +1,172 @@
 
-img {
-    
-   max-width: 500px;
+* {
+    box-sizing: border-box;
 }
+
+img {
+    max-height: 650px;
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+:root {
+    --black: #010101;
+    --yellow: #E4A546;
+    --white: #ffffff;
+    --purple: #32253F;
+} 
+
+.fas {
+    color: white;
+    font-size: 1.5vw;
+}
+
+body {
+    margin: 0;
+}
+
+p, a, h1, h2 {
+    font-family: sans-serif;
+}
+
+
+
+/*----------------------------------------------------INDEX-------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 20vw;
+    background-color: var(--black);
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#logotext {
+    color: var(--yellow);
+    font-size: 1.5vw;
+}
+
+#logo {
+    font-size: 4vw;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.headerimage {
+    max-width: 7vw;
+}
+
+.headerleft {
+    padding: 2vw 0 2vw 4vw;
+}
+
+.headerright {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 4vw 2vw 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.fas {
+    padding-left: 2.5vw;
+}
+
+.fa-shopping-basket {
+    margin-right: 0.5vw;
+}
+
+a.borderbutton {
+    padding: 0.5vw;
+    border: white 0.3vw solid;
+}
+
+nav {
+    width: 100%;
+    height: 63px;
+    background-color: var(--yellow);
+    padding: 1.5vw 4vw 1.5vw 4vw;
+}
+
+.left-menu, .mid-menu {
+    display: inline-block;
+    box-shadow: 10px;
+}
+
+.left-menu a, .mid-menu a {
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mid-menu a {
+    margin-right: 3vw;
+}
+.mid-menu a:last-child {
+    margin-right: 0;
+}
+
+.mid-menu {
+    margin-left: 19vw;  /* Se over denne, regn ut igjen. Husk å ta med padding og marginer før, inni og alt*/
+}
+
+
+
+.hero {
+    position: relative;
+}
+
+.h1index {
+  
+    right: 3.5vw;
+    bottom: 15vw;
+    font-size: 4vw;
+}
+
+.hero > p,.hero > h1, .hero > a {
+    color: white;
+    position: absolute;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#phero {
+    font-size: 1.2vw;
+    right: 3.5vw;
+    bottom: 15vw;
+}
+
+#linkhero {
+    right: 3.5vw;
+    bottom: 9vw;
+    background-color: var(--purple);
+}
+
+.fullbutton {
+    padding: 1.2vw 1.5vw 1.2vw 1.5vw;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+
+
+
+
+
+
+
 
