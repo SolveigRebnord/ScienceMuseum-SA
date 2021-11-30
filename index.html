@@ -23,7 +23,7 @@
             <img class="headerimage" src="images.img/lyspære_header_optimalisert.jpg" alt="Lightbulb">
         </div>
         <div class="headernav">
-            <a class="borderbutton" href="contact.html">DONATE</a>
+            <a class="borderbutton" id="donatebutton" href="contact.html">DONATE</a>
             <i class="fas fa-search"></i>
             <a href="booking.html"><i class="fas fa-shopping-basket"></i>Tickets</a>
         </div>
@@ -31,6 +31,20 @@
 </header>
 
 <nav>
+    <div class="burger-menu">
+        <label for="burger-menu"> 
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" name="burger-menu" id="burger-menu">
+        <nav class="burger-menu-nav">
+            <ul>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="planyourvisit.html">Plan Your Visit</a></li>
+                <li><a href="contact.html">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="left-menu">
         <a class="borderbutton" href="booking.html">Free Tickets</a>
     </div>
@@ -40,6 +54,7 @@
         <a href="planyourvisit.html">Plan Your Visit</a>
         <a href="contact.html">Get In Touch</a>
     </div>
+    
 </nav>
 
 
