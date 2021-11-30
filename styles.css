@@ -240,8 +240,13 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
         display: none;
     }
     #linkhero {
-        bottom: 12vw;
-        font-size: 1.45vw;
+        position: unset;
+        width: 100%;
+        text-align: center;
+        height: 2rem;
+    }
+    a#linkhero {
+        font-size: 1rem;
     }
 }
 
