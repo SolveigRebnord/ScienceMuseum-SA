@@ -36,6 +36,7 @@ p, a, h1, h2 {
 
 /*----------------------------------------------------INDEX-------------------------------------------------------------*/
 
+/*header*/
 header {
     width: 100%;
     height: 20vw;
@@ -94,9 +95,10 @@ a.borderbutton {
     border: white 0.3vw solid;
 }
 
+/*navbar*/
 .navbar {
     width: 100%;
-    height: 63px;
+    height: 4rem;
     background-color: var(--yellow);
     padding: 1.5vw 4vw 1.5vw 4vw;
 }
@@ -111,21 +113,20 @@ a.borderbutton {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 0.8rem;
 }
-
 
 .mid-menu a {
     margin-right: 3vw;
+    font-size: 1rem;
 }
 .mid-menu a:last-child {
     margin-right: 0;
 }
 
 .mid-menu {
-    margin-left: 19vw;  /* Se over denne, regn ut igjen. Husk å ta med padding og marginer før, inni og alt*/
+    float: right;
 }
-
-
 
 i.fas.fa-bars {
     padding: 0;
@@ -134,6 +135,7 @@ i.fas.fa-bars {
     padding-top: 0.5rem;
 }
 
+/*burger menu*/
 div.burger-menu {
     display: inline;
 }
@@ -151,6 +153,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     display: block; 
 }
 
+/*mobil ikoneri*/
 #searchmobil, #ticketmobil {
     font-size: 1.5rem;
     float: right;
@@ -160,6 +163,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 #ticketmobil {
     margin-right: 0.5rem;
 }
+
 
 @media screen and (max-width: 750px) {
     .mid-menu {
@@ -182,15 +186,15 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
         max-width: 9vw;
         margin-right: 1rem;
     }
-
-
 }
 
 @media screen and (min-width: 750px) {
     label {
         display: none;
     }
-    
+    #searchmobil, #ticketmobil {
+        display: none;
+    }
 }
 
 
