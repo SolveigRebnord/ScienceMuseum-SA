@@ -197,16 +197,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+/*hero seksjon*/
 .hero {
     position: relative;
     z-index: -1;
@@ -243,6 +234,17 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     text-decoration: none;
     font-size: 1vw;
 }
+
+@media screen and (max-width: 750px) {
+    #phero {
+        display: none;
+    }
+    #linkhero {
+        bottom: 12vw;
+        font-size: 1.45vw;
+    }
+}
+
 
 
 
