@@ -94,7 +94,7 @@ a.borderbutton {
     border: white 0.3vw solid;
 }
 
-nav {
+.navbar {
     width: 100%;
     height: 63px;
     background-color: var(--yellow);
@@ -151,24 +151,38 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     display: block; 
 }
 
+#searchmobil, #ticketmobil {
+    font-size: 1.5rem;
+    float: right;
+    margin-top: 0.6rem;
+}
+
+#ticketmobil {
+    margin-right: 0.5rem;
+}
+
 @media screen and (max-width: 750px) {
     .mid-menu {
         display: none;
     }
     div.left-menu {
-        float: right;
-        margin-top: 0.8rem;
-    }
-    #donatebutton {
         display: none;
     }
+   
     #logotext {
         display: none;
     }
-
     #logo {
-        margin-top: 0.4rem;
+        margin-top: 0.3rem;
     }
+    .headernav {
+        display: none;
+    }
+    .headerimage {
+        max-width: 9vw;
+        margin-right: 1rem;
+    }
+
 
 }
 
