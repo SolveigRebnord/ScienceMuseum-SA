@@ -401,7 +401,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 
 .christmasnews {
     width: 100%;
-    height: 30rem;
+    height: 40vw;
     background-image: url(images.img/granbar_optimized.jpg);
     background-size: cover;
     display: flex;
@@ -414,14 +414,14 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 }
 
 .christmasheadline > p {
-    font-size: 3vw;
+    font-size: 4vw;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: rgb(177, 173, 173) 0px 2px 4px;
 
 }
 
 .christmasheadline > h2 {
-    font-size: 5vw;
+    font-size: 6vw;
     margin: 1vw 0 1vw 0;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2px;
@@ -460,6 +460,11 @@ p.pheadline {
 
     .christmasinfo > p {
         display: none;
+    }
+
+    .christmasbutton {
+        padding: 2vw 4vw 2vw 4vw;
+        font-size: 2vw;
     }
     
 }
