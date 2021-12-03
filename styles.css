@@ -679,10 +679,6 @@ mark {
     margin-block-end: 2rem;
 }
 
-
-
-
-
 .bookingimg {
     max-width: 400px;
     min-width: 320px;
@@ -705,7 +701,6 @@ mark {
     flex-direction: column;
     max-width: 320px;
 }
-
 
 .bookingheadline {
     width: 100%;
@@ -745,4 +740,11 @@ div.bookingbuttondiv {
     }
 }
 
+/*-------------------------------------------------------eplore------------------------------------------------------------*/
 
+.exploresection {
+    width: 100%;
+    height: 48vw;
+    background-size: cover;
+    background-image: url(images.img/cosmo_optimized.jpg);
+}
