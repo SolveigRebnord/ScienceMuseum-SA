@@ -876,7 +876,8 @@ div.bookingbuttondiv {
 
 .medicinsection {
     background-image: url(images.img/pawel-czerwinski-2Y8ol_OBS1I-unsplash-kopi_2_30.jpg);
-    padding: 5rem 9rem 3rem 3rem
+    padding: 5rem 9rem 3rem 3rem;
+    margin-bottom: 1rem;
 }
 
 .exploreh2 {
