@@ -672,9 +672,7 @@ mark {
     .imagetextright > img, .imagetextleft > img {
         max-height: 200px;
     }
-    .imagetextright, .imagetextleft {
-        max-width: 100%;
-    }
+    
 }
 
 .shoph3 {
