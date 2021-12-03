@@ -799,13 +799,70 @@ div.bookingbuttondiv {
     }
 
     p.pspace {
-       margin-bottom: 1rem;
+       margin-bottom: 1.5rem;
     }
 
     .space {
         padding: 1rem 1.5rem 1rem 1.5rem;
     }
+
+    .exploresection {
+        padding: 1rem 0rem 3rem 3rem;
+    }
 }
+
+@media screen and (max-width: 700px) {
+    #astronaut {
+        display: none;
+    }
+    .exploresection {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .spacesection {
+        display: inherit;
+    }
+    .h2space {
+        margin-bottom: 1.5rem;
+    }
+    .space {
+        padding: 0;
+        line-height: 6px;
+        margin-top: 0.5rem;
+    }
+    .spacebutton {
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .exploresection {
+        height: 22rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .exploresection {     
+    background-size: cover;
+    background-position: center center;
+
+    }
+
+    .medicinsection {
+        background-image: url(images.img/medicin_mobil.jpg);
+    }
+
+    .evolutionsection {
+        background-image: url(images.img/monkey_mobil.jpg);
+    }
+
+    .ecologysection {
+        background-image: url(images.img/ecology_mobil.jpg);
+    }
+}
+
 
 
 
@@ -816,6 +873,7 @@ div.bookingbuttondiv {
     height: 48vw;
     background-size: cover;
     padding: 5rem 9rem 3rem 3rem;
+    background-position: center center;
 }
 
 .exploreh2 {
@@ -839,6 +897,11 @@ div.exploretextright {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .medicinsection {
+        padding: 1rem 3rem 1rem 3rem;
+    }
+}
 
 
 
@@ -862,33 +925,6 @@ div.exploretextright {
 
 
 
-@media screen and (max-width: 600px) {
-    .exploresection {
-        height: 20rem;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-
-    .exploresection {
-     
-  background-size: cover;
-  background-position: center center;
-    }
-
-    .medicinsection {
-        background-image: url(images.img/medicin_mobil.jpg);
-    }
-
-    .evolutionsection {
-        background-image: url(images.img/monkey_mobil.jpg);
-    }
-
-    .ecologysection {
-        background-image: url(images.img/ecology_mobil.jpg);
-    }
-}
 
 
 
