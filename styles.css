@@ -865,15 +865,18 @@ div.bookingbuttondiv {
 
 
 
+.allsections {
+    width: 100%;
+    height: 48vw;
+    background-size: cover;
+    background-position: center center;
+}
+
 
 
 .medicinsection {
     background-image: url(images.img/pawel-czerwinski-2Y8ol_OBS1I-unsplash-kopi_2_30.jpg);
-    width: 100%;
-    height: 48vw;
-    background-size: cover;
-    padding: 5rem 9rem 3rem 3rem;
-    background-position: center center;
+    padding: 5rem 9rem 3rem 3rem
 }
 
 .exploreh2 {
@@ -921,12 +924,45 @@ div.exploretextright {
 
 
 
-
-
-
 .evolutionsection {
     background-image: url(images.img/benjamin-suter-C2MSIMEgfGI-unsplash_2_48.jpg);
 }
+
+div.exploretextleft {
+    width: 40vw;
+    font-size: 1.5vw;
+    text-align: justify;
+    padding: 4rem 0 0 6rem;
+    color: white;
+}
+
+.whiteexploreh2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3vw;
+    border-bottom: solid white 2px;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    div.exploretextleft {
+        padding: 3rem 0rem 0rem 3.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.exploretextleft {
+        width: 55vw;
+        font-size: 0.6rem;
+        line-height: 12px;
+        padding: 1rem 0rem 0rem 1rem;
+    }
+}
+
+
+
+
+
 
 .robotsection {
     background-image: url(images.img/robot-gae3e73577_1280.jpg);
