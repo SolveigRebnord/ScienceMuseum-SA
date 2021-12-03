@@ -896,16 +896,28 @@ div.exploretextright {
         padding: 3rem 5.5rem 3rem 3rem;
     }
     div.exploretextright {
-        font-size: 0.5rem;
-        width: 250px;
+        font-size: 0.8rem;
+        width: 300px;
     }
+
+    .exploreh2 {
+        font-size: 1.5rem;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
     .medicinsection {
-        padding: 1rem 1.5rem 1rem 3rem;
+        padding: 2rem 2.5rem 1rem 3rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .medicinsection {
+        height: 22rem;
+    }
+}
+
 
 
 
