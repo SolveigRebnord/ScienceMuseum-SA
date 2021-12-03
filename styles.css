@@ -975,11 +975,61 @@ div.exploretextleft {
 
 
 
-
-
 .robotsection {
     background-image: url(images.img/robot-gae3e73577_1280.jpg);
+    padding: 4rem 0 0 4rem;
 }
+
+.roboth2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    text-align: center;
+}
+
+.robotheadline {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.robotdiv {
+    width: 14rem;
+    text-align: justify;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    .robotsection {
+        padding: 2rem 0 0 2rem;
+        font-size: 0.8rem;
+    }
+    .roboth2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .robotsection {
+        padding: 1rem 0 0 1rem;
+        font-size: 0.8rem;
+    }
+    .robotdiv {
+        width: 8rem;
+        text-align: left;
+    }
+    .robotheadline {
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    }
+}
+
+
+
+
 
 .ecologysection {
     background-image: url(images.img/jan-kopriva-nex3P5iBnPg-unsplash_5_29.jpg);
