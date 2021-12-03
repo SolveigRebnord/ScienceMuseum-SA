@@ -876,8 +876,7 @@ div.bookingbuttondiv {
 
 .medicinsection {
     background-image: url(images.img/pawel-czerwinski-2Y8ol_OBS1I-unsplash-kopi_2_30.jpg);
-    padding: 5rem 9rem 3rem 3rem;
-    margin-bottom: 1rem;
+    padding: 3rem 9rem 3rem 3rem;
 }
 
 .exploreh2 {
@@ -885,6 +884,7 @@ div.bookingbuttondiv {
     text-align: center;
     font-size: 3vw;
     border-bottom: solid black 2px;
+    padding: 0 0 1rem 0;
 }
 
 div.exploretextright {
@@ -897,7 +897,7 @@ div.exploretextright {
 
 @media screen and (max-width: 800px) {
     .medicinsection {
-        padding: 3rem 5.5rem 3rem 3rem;
+        padding: 1rem 5.5rem 3rem 3rem;
     }
     div.exploretextright {
         font-size: 0.8rem;
@@ -912,7 +912,7 @@ div.exploretextright {
 
 @media screen and (max-width: 500px) {
     .medicinsection {
-        padding: 2rem 2.5rem 1rem 3rem;
+        padding: 0.5rem 2.5rem 1rem 3rem;
     }
 }
 
