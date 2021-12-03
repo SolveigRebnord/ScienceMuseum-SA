@@ -1028,14 +1028,42 @@ div.exploretextleft {
 }
 
 
-
-
-
 .ecologysection {
     background-image: url(images.img/jan-kopriva-nex3P5iBnPg-unsplash_5_29.jpg);
+    padding: 2rem 1rem 1rem 2rem;
+}
+
+.ecologyheadline {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 14rem;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: var(--black) solid 6px 6px;
+}
+
+.ecologyheadline > h2 {
+    margin: 0;
 }
 
 
+.flexecology {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 31rem;
+    align-items: center;
+    color: white;
+}
+
+#ecologyright {
+    text-align: right;
+}
+
+div.ecologyflex {
+    height: 200px;
+    color: white;
+}
 
 
 
