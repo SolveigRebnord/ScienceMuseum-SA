@@ -916,7 +916,7 @@ div.exploretextright {
 }
 
 @media screen and (max-width: 600px) {
-    .medicinsection {
+    .allsections {
         height: 22rem;
     }
 }
@@ -952,10 +952,10 @@ div.exploretextleft {
 
 @media screen and (max-width: 500px) {
     div.exploretextleft {
-        width: 55vw;
-        font-size: 0.6rem;
+        width: 45vw;
+        font-size: 0.8rem;
         line-height: 12px;
-        padding: 1rem 0rem 0rem 1rem;
+        padding: 2rem 0rem 0rem 1.5rem;
     }
 }
 
