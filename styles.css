@@ -897,7 +897,7 @@ div.exploretextright {
 
 @media screen and (max-width: 800px) {
     .medicinsection {
-        padding: 0.5rem 5.5rem 3rem 3rem;
+        padding: 0.2rem 5.5rem 3rem 3rem;
     }
     div.exploretextright {
         font-size: 0.8rem;
@@ -912,7 +912,7 @@ div.exploretextright {
 
 @media screen and (max-width: 500px) {
     .medicinsection {
-        padding: 0.2rem 2.5rem 1rem 3rem;
+        padding: 0rem 2.5rem 1rem 3rem;
     }
 }
 
