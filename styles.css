@@ -819,3 +819,35 @@ div.bookingbuttondiv {
 .robotsection {
     background-image: url(images.img/robot-gae3e73577_1280.jpg);
 }
+
+.ecologysection {
+    background-image: url(images.img/jan-kopriva-nex3P5iBnPg-unsplash_5_29.jpg);
+}
+
+
+@media screen and (max-width: 600px) {
+    .exploresection {
+        height: 20rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .medicinsection {
+        background-image: url(images.img/medicin_mobil.jpg);
+    }
+
+    .evolutionsection {
+        background-image: url(images.img/monkey_mobil.jpg);
+    }
+
+    .ecologysection {
+        background-image: url(images.img/ecology_mobil.jpg);
+    }
+}
+
+
+
+
+
