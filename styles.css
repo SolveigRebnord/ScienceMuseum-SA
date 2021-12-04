@@ -1030,13 +1030,13 @@ div.exploretextleft {
 
 .ecologysection {
     background-image: url(images.img/jan-kopriva-nex3P5iBnPg-unsplash_5_29.jpg);
-    padding: 2rem 1rem 1rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 .ecologyheadline {
     color: white;
     text-transform: uppercase;
-    margin-bottom: 26rem;
+    margin-bottom: 24rem;
     margin-top: 1rem;
     font-size: 3.5rem;
     letter-spacing: 5px;
@@ -1069,7 +1069,7 @@ div.ecologyflex {
 
 @media screen and (max-width:1100px) {
     .ecologyheadline {
-        margin-bottom: 11rem;
+        margin-bottom: 9.5rem;
     }
     .flexecology {
         gap: 36rem;
@@ -1105,5 +1105,43 @@ div.ecologyflex {
 
 
 
+.gridexplore {
+    display: grid;
+    grid-template-areas:
+    'one two'
+    'three two'
+    'three four';
+    margin: 5vw;
+}
 
+.img1 {
+    grid-area: one;
+}
 
+.img2 {
+    grid-area: two;
+}
+
+.img3 {
+    grid-area: three;
+}
+
+.img4 {
+    grid-area: four;
+}
+
+.divforposition {
+    position: relative;
+}
+
+.abovegrid {
+    position: absolute;
+    width: 30vw;
+    background-color: white;
+    top: 23vw;
+    left: 35vw;
+    padding: 2vw;
+    text-align: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    font-size: 1.2vw;
+}
