@@ -1079,7 +1079,7 @@ div.ecologyflex {
 
 @media screen and (max-width:800px) {
     .ecologyheadline {
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         font-size: 2.5rem;
     }
     .flexecology {
@@ -1093,7 +1093,14 @@ div.ecologyflex {
 
 }
 
-
+@media screen and (max-width:500px) {
+    .flexecology {
+        gap: 0;
+    }
+    .ecologyheadline {
+        font-size: 1rem;
+    }
+}
 
 
 
