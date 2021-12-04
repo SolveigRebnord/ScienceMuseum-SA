@@ -1111,7 +1111,6 @@ div.ecologyflex {
     'one two'
     'three two'
     'three four';
-    margin: 5vw;
 }
 
 .img1 {
@@ -1138,7 +1137,7 @@ div.ecologyflex {
     position: absolute;
     width: 30vw;
     background-color: white;
-    top: 23vw;
+    top: 26.5vw;
     left: 35vw;
     padding: 2vw;
     text-align: center;
