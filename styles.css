@@ -1302,11 +1302,7 @@ div.ecologyflex {
     }
 
     .clubdivimageyoungstar > h2, .clubdivimageholiday > h2{
-        display: none;
-    }
-
-    .clubdivimageyoungstar > img, .clubdivimageholiday > img {
-        
+       font-size: 3rem;
     }
 
     .clubsection {
@@ -1317,7 +1313,8 @@ div.ecologyflex {
 
 
 @media screen and (min-width:600px) {
-.clubdivimageyoungstar > img, .clubdivimageholiday > img {
+
+    .clubdivimageyoungstar > img, .clubdivimageholiday > img {
         display: none;
-}
+    }
 }
