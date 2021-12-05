@@ -1315,3 +1315,32 @@ div.ecologyflex {
         display: none;
     }
 }
+
+
+.newsflex {
+    display: flex;
+}
+
+.imageleft {
+    flex: 30%;
+}
+
+.imageleft img {
+    vertical-align: top;
+}
+
+.textright {
+    text-align: right;
+    flex: 70%;
+    padding: 1rem 1rem 1rem 8rem;
+    font-size: 1.4vw;
+}
+
+@media screen and (max-width:600px) {
+
+    .textright {
+        font-size: 1.6vw;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+}
+
