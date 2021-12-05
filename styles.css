@@ -1265,13 +1265,17 @@ div.ecologyflex {
     color: white;
 }
 
+.holiday {
+    left: 5px;
+}
+
 .club {
-    bottom: 3px;
-    right: 3px;
+    bottom: 1px;
+    right: 5px;
 }
 
 .youngstar {
-    left: 12.5%;
+    left: 1rem;
     top: 1rem;
 }
 
@@ -1302,7 +1306,11 @@ div.ecologyflex {
     }
 
     .clubdivimageyoungstar > h2, .clubdivimageholiday > h2{
-       font-size: 3rem;
+       font-size: 2rem;
+    }
+
+    .youngstar {
+      
     }
 
     .clubsection {
@@ -1310,7 +1318,6 @@ div.ecologyflex {
         flex-direction: column;
     }
 }
-
 
 @media screen and (min-width:600px) {
 
