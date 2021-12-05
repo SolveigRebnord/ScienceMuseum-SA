@@ -1916,4 +1916,43 @@ fieldset {
 }
 
 
+.donatesponsorsection {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
 
+.donatediv {
+    flex: 60%;
+}
+
+.sponsordiv {
+    flex: 30%;
+}
+
+.donatesponsordivs {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    height: 300px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.smalltext {
+    font-size: 0.8rem;
+}
+
+.donatebutton {
+    display: block;
+    padding: 1rem 4rem 1rem 4rem;
+    width: fit-content;
+    background-color: #010E25;
+    color: white;
+    margin: 1rem auto 1rem auto;
+
+}
+
+@media screen and (max-width:600px) {
+    .donatesponsorsection {
+        flex-direction: column;
+    }
+}
