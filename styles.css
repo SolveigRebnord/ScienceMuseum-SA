@@ -1319,6 +1319,7 @@ div.ecologyflex {
 
 .newsflex {
     display: flex;
+    flex-direction: row;
 }
 
 .imageleft {
@@ -1338,9 +1339,14 @@ div.ecologyflex {
 
 @media screen and (max-width:600px) {
 
-    .textright {
-        font-size: 1.6vw;
-        padding: 0.5rem 1rem 0.5rem 1rem;
+    .newsflex {
+        flex-direction: column;
     }
+    .textright {
+        text-align: center;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 2vw;
+    }
+
 }
 
