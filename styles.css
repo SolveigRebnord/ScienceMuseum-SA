@@ -1380,6 +1380,7 @@ div.ecologyflex {
     align-items: center;
     gap: 2rem;
     padding: 1rem;
+    margin-top: 2rem;
 }
 
 .christmasexploreinfo {
@@ -1455,5 +1456,100 @@ div.ecologyflex {
     .christmasexplorediv {
         background-color: white;
         padding: 0.5rem;
+    }
+}
+
+
+
+.educationexplore {
+    background-image: url(images.img/sigmund-OV44gxH71DU-unsplash_1_30.jpg);
+    background-size: cover;
+    height: 30rem;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.educationexplorediv {
+    font-size: 1.2vw;
+    padding: 3rem 2rem 2rem 2rem;
+    background-color: #432922;
+    width: 50vw;
+    height: fit-content;
+    color: white;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    text-align: center;
+}
+
+
+.researchersexplore {
+    background-image: url(images.img/concept-gbc5ea0934_1280.jpg);
+    background-size: cover;
+    height: 590px;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+}
+
+.researchersexplorediv {
+    flex: 40%;
+    max-width: 320px;
+    height: 360px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+}
+
+.researchersexploredivleft {
+    background-color: rgba(255, 255, 255, 0.651);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem 0.5rem 2rem 0.5rem;
+}
+
+.researchersexploredivleft > ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+}
+
+.researchersexploredivleft > ul > li {
+    margin-bottom: 1rem;
+}
+
+.researchersexploredivleft > p {
+    font-weight: bold;
+    margin: 5rem 0 0 0;
+}
+
+.researchersexploredivright {
+    background-color: rgba(255, 255, 255, 0.651);
+    padding: 2rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width:800px) {
+    .researchersexploredivleft {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .researchersexplore {
+        height: fit-content;
+        padding: 1rem;
+    }
+
+    .researchersexploredivright {
+        padding: 1.5rem;
     }
 }
