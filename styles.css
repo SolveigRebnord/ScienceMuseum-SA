@@ -1259,26 +1259,20 @@ div.ecologyflex {
 
 .clubdivimageholiday > h2, .clubdivimageyoungstar > h2 {
     position: absolute;
-    font-size: 5vw;
+    font-size: 6vw;
     text-transform: uppercase;
     margin: 0;
     color: white;
 }
 
-.holiday {
+.holiday, .young {
     left: 5px;
 }
 
-.club {
+.club, .star {
     bottom: 1px;
     right: 5px;
 }
-
-.youngstar {
-    left: 1rem;
-    top: 1rem;
-}
-
 
 @media screen and (min-width:1200px) {
     .clubdivtext {
@@ -1306,11 +1300,7 @@ div.ecologyflex {
     }
 
     .clubdivimageyoungstar > h2, .clubdivimageholiday > h2{
-       font-size: 2rem;
-    }
-
-    .youngstar {
-      
+       font-size: 3rem;
     }
 
     .clubsection {
