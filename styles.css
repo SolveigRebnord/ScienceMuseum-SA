@@ -1320,6 +1320,8 @@ div.ecologyflex {
 .newsflex {
     display: flex;
     flex-direction: row;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    margin-top: 2rem;
 }
 
 .imageleft {
@@ -1345,8 +1347,113 @@ div.ecologyflex {
     .textright {
         text-align: center;
         padding: 1rem 1rem 1rem 1rem;
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.reversedtext {
+    text-align: left;
+    padding: 1rem;
+}
+
+@media screen and (max-width:600px) {
+
+    .reversed {
+        flex-direction: column;
+    }
+    .reversedtext {
+        text-align: center;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 2.5vw;
+    }
+}
+
+.christmasexplore {
+    background-image: url(images.img/anna-peipina-ihDzR6U2Gds-unsplash_36.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.christmasexploreinfo {
+    background-color: white;
+    padding: 1rem;
+    font-size: 1.1vw;
 
 }
 
+.christmash3 {
+    font-size: 6vw;
+    padding: 2rem;
+    color: white;
+    text-transform: uppercase;
+    line-height: 8rem;
+}
+
+.christmasexploreinfo2 {
+    font-size: 1.1vw;
+    margin-top: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    .christmasexplore {
+        flex-direction: column-reverse;
+    }
+
+    .christmasexploreinfo {
+        font-size: 1.5vw;
+    }
+
+    .christmash3 {
+        margin: 0;
+        padding: 0;
+        line-height: 5rem;
+    }
+
+    .christmasexploreinfo2 {
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        font-size: 1.2vw;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:500px) {
+   
+    .christmasexplore {
+        gap: 1rem;
+    }
+    .christmash3 {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .christmasexploreinfo {
+        font-size: 0.7rem;
+    }
+
+    .christmasexploreinfo2 {
+        padding: 1rem;
+        background-color: transparent;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .christmasexplorediv {
+        background-color: white;
+        padding: 0.5rem;
+    }
+}
