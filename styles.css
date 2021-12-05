@@ -36,6 +36,10 @@ h1, h2, h3 {
     margin: 0;
 }
 
+.breadcrumbs {
+    color: black;
+    margin-bottom: 3rem;
+}
 
 
 /*----------------------------------------------------INDEX-------------------------------------------------------------*/
@@ -106,7 +110,7 @@ a.borderbutton {
     width: 100%;
     height: 4rem;
     background-color: var(--yellow);
-    padding: 1.5vw 6vw 1.5vw 6vw;
+    padding: 1.5vw 4vw 1.5vw 4vw;
 }
 
 .left-menu, .mid-menu {
@@ -1176,7 +1180,7 @@ div.ecologyflex {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 6vw;
-    line-height: 4.1vw;
+    line-height: 3.9vw;
     text-align: center;
 }
 
@@ -1955,4 +1959,8 @@ fieldset {
     .donatesponsorsection {
         flex-direction: column;
     }
+}
+
+.h3marg {
+    margin-bottom: 2rem;
 }
