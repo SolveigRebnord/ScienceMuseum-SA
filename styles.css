@@ -1154,3 +1154,170 @@ div.ecologyflex {
         padding: 3vw;
     }
 }
+
+
+/*--------------------------------------------------explore------------------------------------------------------------------*/
+
+.navwithh1 {
+    height: 10vw;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.h1headline {
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 5vw;
+    top: 5.5vw;
+    right: 19.5vw;
+    margin: 0;
+}
+
+@media screen and (max-width:1100px) {
+    .h1headline {
+        right: 26.5vw;
+        top: 5.4vw;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .h1headline {
+        right: 36vw;
+        top: 5.2vw;
+    }
+}
+
+@media screen and (max-width:748px) {
+    .h1headline {
+        position: initial;
+    }
+}
+
+.currentsite {
+    border-bottom: 3px solid black;
+}
+
+
+.undernav {
+    height: 3rem;
+    background-color: var(--purple);
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 3rem;
+}
+
+.undernavul > li {
+    display: inline;
+    margin-right: 3rem;
+    text-transform: uppercase;
+}
+
+
+
+.exploremain {
+    margin: 0 4vw 0 4vw;
+}
+
+.clubsection {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.clubdivright, .clubdivleft {
+    flex: 40%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.clubdivtext {
+    padding: 3rem;
+    width: 100%;
+    height: 50vw;
+}
+
+.clubdivimageholiday {
+    position: relative;
+    background-image: url(images.img/neonbrand-IF8B82QBCkM-unsplash_50.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
+}
+
+.clubdivimageyoungstar {
+    position: relative;
+    background-image: url(images.img/nathan-dumlao-P5MXtYfgmmw-unsplash_27.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
+}
+
+.clubdivimageholiday > h2, .clubdivimageyoungstar > h2 {
+    position: absolute;
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+}
+
+.club {
+    bottom: 3px;
+    right: 3px;
+}
+
+.youngstar {
+    left: 12.5%;
+    top: 1rem;
+}
+
+
+@media screen and (min-width:1200px) {
+    .clubdivtext {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .clubdivtext {
+        flex: 50%;
+        font-size: 0.68rem;
+        padding: 1rem;
+    }
+    .clubsection {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .clubdivtext {
+        flex: 40%;
+        font-size: 0.68rem;
+        padding: 1rem;
+    }
+
+    .clubdivimageyoungstar > h2, .clubdivimageholiday > h2{
+        display: none;
+    }
+
+    .clubdivimageyoungstar > img, .clubdivimageholiday > img {
+        
+    }
+
+    .clubsection {
+        gap: 1rem;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+.clubdivimageyoungstar > img, .clubdivimageholiday > img {
+        display: none;
+}
+}
