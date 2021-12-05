@@ -31,6 +31,11 @@ p, a, h1, h2 {
     font-family: sans-serif;
 }
 
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
 
 
 /*----------------------------------------------------INDEX-------------------------------------------------------------*/
@@ -101,7 +106,7 @@ a.borderbutton {
     width: 100%;
     height: 4rem;
     background-color: var(--yellow);
-    padding: 1.5vw 4vw 1.5vw 4vw;
+    padding: 1.5vw 6vw 1.5vw 6vw;
 }
 
 .left-menu, .mid-menu {
@@ -1159,19 +1164,20 @@ div.ecologyflex {
 /*--------------------------------------------------explore------------------------------------------------------------------*/
 
 .navwithh1 {
-    height: 10vw;
+    height: fit-content;
     position: relative;
+    padding: 1rem 4vw 0 4vw;
+    border-bottom: solid 10px var(--black);
     margin-bottom: 1rem;
 }
 
 .h1headline {
-    position: absolute;
+    margin: 3rem 0 0 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 5vw;
-    top: 5.5vw;
-    right: 19.5vw;
-    margin: 0;
+    font-size: 6vw;
+    line-height: 4.1vw;
+    text-align: center;
 }
 
 @media screen and (max-width:1100px) {
@@ -1200,12 +1206,13 @@ div.ecologyflex {
 
 
 .undernav {
-    height: 3rem;
+    height: fit-content;
     background-color: var(--purple);
     color: white;
     text-align: center;
-    padding: 1px;
+    padding: 1px 0 1.5px 0;
     margin-bottom: 3rem;
+    font-size: 1.2vw;
 }
 
 .undernavul > li {
@@ -1213,8 +1220,6 @@ div.ecologyflex {
     margin-right: 3rem;
     text-transform: uppercase;
 }
-
-
 
 .exploremain {
     margin: 0 4vw 0 4vw;
@@ -1560,5 +1565,218 @@ div.ecologyflex {
 
     .researchersexploredivright {
         padding: 1.5rem;
+    }
+}
+
+
+/*--------------------------------------------------------contact----------------------------------------------------------------*/
+
+.maincontact {
+    margin: 0 8vw 0 8vw;
+}
+
+.darkfas {
+    color: var(--black);
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 2.5vw;
+}
+
+.contactinformationsection {
+    background-image: url(images.img/corey-buckley-WJ0ISNjpvxo-unsplash_47.jpg);
+    display: flex;
+    height: 350px;
+    gap: 7vw;
+    background-position: center center;
+    padding: 3vw 6vw 3vw 6vw;
+    margin-bottom: 3rem;
+}
+
+.contactinformationsectiondiv {
+    flex: 33%;
+    height: 280px;
+    background-color: rgba(255, 255, 255, 0.685);
+    text-align: center;
+    padding: 3rem 1rem 1rem 1rem ;
+}
+
+.socialicon {
+    font-size: 2rem;
+    margin: 0 1.1vw 2vw 1.1vw
+}
+
+.contactinfoheader {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px black solid;
+    padding-bottom: 4px;
+}
+
+.flexicons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:800px) {
+    .maincontact {
+        margin: 0 1rem 0 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contactinformationsection {
+        flex-direction: column;
+        background-color: #D8B77E;
+        background-image: none;
+        height: fit-content;
+    }
+}
+
+
+.minibook {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    height: 100px;
+    padding: 1rem 3rem 1rem 3rem;
+    margin-bottom: 3rem;
+}
+
+.bigtext {
+    font-size: 3.2vw;
+}
+
+.minibookbutton {
+    background-color: var(--purple);
+    padding: 0.7rem 4rem 0.7rem 4rem;
+    color: white;
+}
+
+
+@media screen and (max-width:500px) {
+    .minibook {
+        flex-direction: column;
+    }
+
+    .darkfas {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+.clubmembertotalsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.clubmembersection {
+    display: flex;
+    flex-direction: row;
+    flex: 40%;
+    justify-content: space-between;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 1.5rem;
+}
+
+.clubmembersectionright {
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.clubmembersectionleft > .clubmemberdiv > p, .clubmembersectionright > .clubmemberdiv > p  {
+    padding-bottom: 5px;
+    border-bottom: solid 5px var(--yellow);
+    margin-bottom: 1rem;
+}
+
+.circeldiv {
+    background-color: var(--purple);
+    color: white;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    position: relative;
+    text-align: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+}
+
+.circeldiv > p {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.marksmallertext {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.prizeonly {
+    font-size: 1.3rem;
+}
+
+
+
+@media screen and (max-width:1100px) {
+    .clubmemberdiv {
+    max-width: 220px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .clubmembertotalsection {
+        flex-direction: column;
+    }
+
+    .clubmembersection {
+        width: 100%;
+    }
+
+    .clubmemberdiv {
+        max-width: fit-content;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .clubmemberdiv {
+        max-width: 200px;
+    }
+    .circeldiv {
+        height: 100px;
+        width: 100px;
+        font-size: 1rem;
+    }
+
+    .marksmallertext {
+        font-size: 0.6rem;
+    }
+
+    .clubmembersectionleft > .clubmemberdiv > p, .clubmembersectionright > .clubmemberdiv > p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .clubmemberdiv {
+        max-width: 160px;
     }
 }
