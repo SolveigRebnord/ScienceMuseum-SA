@@ -42,108 +42,173 @@ h1, h2, h3 {
 }
 
 
+:root {
+    --header: 'Fjalla One', sans-serif;
+}
+
 /*----------------------------------------------------INDEX-------------------------------------------------------------*/
 
 
 
-/*header*/
 header {
     width: 100%;
-    height: 20vw;
-    background-color: var(--black);
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    background-color: black;
+    height: 52vw;
+    padding: 3vw;
 }
 
 #logotext {
-    color: var(--yellow);
-    font-size: 1.5vw;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Fjalla One';
+    text-transform: uppercase;
+
 }
 
 #logo {
-    font-size: 4vw;
-    color: var(--white);
-    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.headerimage {
-    max-width: 7vw;
+#logo > img {
+    max-width: 9vw;
+    display: block;
 }
 
-.headerleft {
-    padding: 2vw 0 2vw 4vw;
-}
-
-.headerright {
-    height: 100%;
+.topheader {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 2vw 4vw 2vw 0;
 }
 
-header a {
-    color: white;
-    text-decoration: none;
-    font-size: 1vw;
+.topheaderdiv {
+    height: fit-content;
 }
 
-.fas {
-    padding-left: 2.5vw;
+.mid-menu > ul {
+    padding: 0;
+    height: fit-content;
 }
 
-.fa-shopping-basket {
-    margin-right: 0.5vw;
-}
-
-a.borderbutton {
-    padding: 0.5vw;
-    border: white 0.3vw solid;
-}
-
-/*navbar*/
-.navbar {
-    width: 100%;
-    height: 4rem;
-    background-color: var(--yellow);
-    padding: 1.5vw 4vw 1.5vw 4vw;
-}
-
-.left-menu, .mid-menu {
-    display: inline-block;
-    box-shadow: 10px;
-}
-
-.left-menu a, .mid-menu a {
-    color: var(--black);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.8rem;
+.mid-menu > ul > li {
+    float: left;
+    margin-right: 2rem;
 }
 
 .mid-menu a {
-    margin-right: 3vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.divicons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+input#search {
+    width: 0.5rem;
+    height: 15px;
+    border: 2px solid transparent;
+    border-radius: 4px;
     font-size: 1rem;
-}
-.mid-menu a:last-child {
-    margin-right: 0;
-}
-
-.mid-menu {
-    float: right;
+    color: white;
+    background-color: transparent;
+    padding: 1rem 1rem 1rem 1rem;
+    transition: width 1s ease-in-out, border 1s ease-in-out;
 }
 
-i.fas.fa-bars {
-    padding: 0;
-    margin-right: 2vw;
-    font-size: 1.8rem;
-    padding-top: 0.5rem;
+input#search:focus {
+    width: 90%;
+    border: 2px double white;
+    background-image: none;
+    outline: none;
 }
+
+input#search:focus > label {
+    display: none;
+}
+
+input#search:hover {
+    cursor: pointer;
+}
+
+.normalicons {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.normalicons a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.bottomheader {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15vw 0 15vw;
+}
+
+.bottomheader > div {
+    flex: 30%;
+}
+
+.bottomheader > div > p{
+    max-width: 380px;
+    margin-bottom: 3rem;
+}
+
+.bottomheaderimg > img {
+    max-width: 24vw;
+}
+
+#h1hero {
+    font-size: 7vw;
+    font-family: 'Fjalla One';
+    text-transform: uppercase;
+}
+
+#headerbutton {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border: 2px solid #32253F;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 780px) {
+    #logotext {
+        display: none;
+    }
+
+    .divicons {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    #logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .topheader {
+        justify-content: space-between
+    }
+}
+
+
+
+
 
 /*burger menu*/
 div.burger-menu {
@@ -163,101 +228,117 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     display: block; 
 }
 
-/*mobil ikoneri*/
-#searchmobil, #ticketmobil {
-    font-size: 1.5rem;
-    float: right;
-    margin-top: 0.6rem;
-}
-
-#ticketmobil {
-    margin-right: 0.5rem;
+@media screen and (min-width: 780px) {
+    #burgerlabel {
+        display: none;
+    }
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
     .mid-menu {
         display: none;
     }
-    div.left-menu {
-        display: none;
-    }
-   
-    #logotext {
-        display: none;
-    }
-    #logo {
-        margin-top: 0.3rem;
-    }
-    .headernav {
-        display: none;
-    }
-    .headerimage {
-        max-width: 9vw;
-        margin-right: 1rem;
-    }
 }
 
-@media screen and (min-width: 750px) {
-    label {
-        display: none;
-    }
-    #searchmobil, #ticketmobil {
-        display: none;
-    }
+.fa-bars {
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
-/*hero seksjon*/
-.hero {
-    position: relative;
-    z-index: -1;
+
+/*collection icons*/
+
+.collectionicons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 3rem 0 3rem 0;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-.h1index {
-  
-    right: 3.5vw;
-    bottom: 15vw;
-    font-size: 4vw;
+.collectioniconsdiv {
+    padding: 2rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 10%;
+    text-align: center;
 }
 
-.hero > p,.hero > h1, .hero > a {
+.collectioniconsdiv > p {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: darkgrey;
+    margin-top: 0.5rem;
+}
+
+.exhibits {
+    background-image: url(images.img/girl-with-red-hat-BBZDOHhYU2s-unsplash\ 1.jpg);
+    height: 392px;
+    padding: 2rem;
     color: white;
-    position: absolute;
-    display: inline-block;
+    object-fit: scale-down;
+}
+
+.h2indexwhite {
+    font-size: 3vw;
     text-transform: uppercase;
+    font-family: 'Fjalla One';
+    margin-bottom: 1rem;
 }
 
-#phero {
-    font-size: 1.2vw;
-    right: 3.5vw;
-    bottom: 15vw;
+.exhibitsdiv {
+    text-align: right;
+    width: 400px;
+    float: right;
 }
 
-#linkhero {
-    right: 3.5vw;
-    bottom: 9vw;
-    background-color: var(--purple);
+.exhibitsdiv > p {
+    margin-bottom: 3rem;
 }
 
-.fullbutton {
-    padding: 1.2vw 1.5vw 1.2vw 1.5vw;
+#seeourcollectionbutton {
+    color: white;
     text-decoration: none;
-    font-size: 1vw;
     text-transform: uppercase;
+    padding: 1rem 3rem 1rem 3rem;
+    border: solid 2px white;
 }
+
+
 
 
 
 /* exhbitits collage*/
 
 .flex5 {
-   display: grid;
-   grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: 27rem;
+    display: flex;
+    flex-direction: row;
 }
 
-.griditem {
-    object-fit: cover;
+.flex5 img {
+    max-width: 288px;
 }
+
+@media screen and (max-width: 500px) {
+    .flex5 {
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .flex5 img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+
+}
+
 
 
 /*liten meny*/
@@ -509,6 +590,36 @@ p.pheadline {
 .getinvolvedbutton {
     background-color: var(--yellow);
     color: black;
+}
+
+footer {
+    width: 100%;
+    height: 25vw;
+    background-image: url(images.img/brandon-vazquez-koC5eG6v6ew-unsplash.jpg);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li:first-child {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+footer ul li {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+footer ul li:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -1964,3 +2075,6 @@ fieldset {
 .h3marg {
     margin-bottom: 2rem;
 }
+
+
+
