@@ -53,7 +53,7 @@ h1, h2, h3 {
 header {
     width: 100%;
     background-color: black;
-    height: 52vw;
+    height: fit-content;
     padding: 3vw;
 }
 
@@ -66,13 +66,10 @@ header {
 
 }
 
-#logo {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 #logo > img {
-    max-width: 9vw;
+    max-width: 10vw;
     display: block;
 }
 
@@ -121,11 +118,13 @@ input#search {
 }
 
 input#search:focus {
-    width: 90%;
-    border: 2px double white;
+    width: 30%;
+    border: 2px solid white;
     background-image: none;
     outline: none;
 }
+
+
 
 input#search:focus > label {
     display: none;
@@ -135,9 +134,14 @@ input#search:hover {
     cursor: pointer;
 }
 
+.fa-search {
+    font-size: 1rem;
+
+}
+
 .normalicons {
-    margin-left: 1rem;
-    font-size: 1.5rem;
+    margin-left: 0.8rem;
+    font-size: 1.2rem;
     color: white;
 }
 
@@ -189,9 +193,11 @@ input#search:hover {
         display: none;
     }
 
-    .divicons {
-        flex-direction: row;
+    header {
+        height: fit-content;
     }
+
+    
 }
 
 @media screen and (min-width: 780px) {
@@ -202,9 +208,16 @@ input#search:hover {
 
 @media screen and (max-width: 780px) {
     .topheader {
-        justify-content: space-between
+        align-items: stretch;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .bottomheader {
+        display: none;
+    }
+}
+
 
 
 
@@ -244,6 +257,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 .fa-bars {
     font-size: 1.5rem;
     margin-top: 1rem;
+    margin-left: 0.5rem;
 }
 
 
@@ -258,6 +272,8 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     gap: 2rem;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-evenly;
+
 
 }
 
@@ -266,6 +282,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     border-radius: 10%;
     text-align: center;
+    max-width: 160px;
 }
 
 .collectioniconsdiv > p {
