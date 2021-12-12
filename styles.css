@@ -214,8 +214,12 @@ input#search:hover {
 
 @media screen and (max-width: 600px) {
     .bottomheader {
-        display: none;
+        flex-direction: column-reverse;
     }
+    #logo > img {
+        min-width: 15vw;
+    }
+
 }
 
 
