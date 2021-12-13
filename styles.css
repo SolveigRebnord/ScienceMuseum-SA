@@ -7,9 +7,6 @@ p {
     margin: 0;
 }
 
-img {
-    width: 100%;
-}
 
 :root {
     --black: #010101;
@@ -17,6 +14,10 @@ img {
     --white: #ffffff;
     --purple: #32253F;
 } 
+
+img {
+    width: 100%;
+}
 
 .fas {
     color: white;
@@ -118,7 +119,7 @@ input#search {
 }
 
 input#search:focus {
-    width: 30%;
+    width: 90%;
     border: 2px solid white;
     background-image: none;
     outline: none;
@@ -189,7 +190,7 @@ input#search:hover {
 }
 
 @media screen and (max-width: 780px) {
-    #logotext {
+    .topheaderdiv {
         display: none;
     }
 
@@ -206,18 +207,23 @@ input#search:hover {
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 769px) {
     .topheader {
-        align-items: stretch;
+        justify-content: space-between;
     }
 }
 
 @media screen and (max-width: 600px) {
     .bottomheader {
         flex-direction: column-reverse;
+        padding: 0 1rem 0 1rem;
     }
     #logo > img {
         min-width: 15vw;
+    }
+
+    .normalicons {
+        display: none;
     }
 
 }
@@ -271,14 +277,12 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 70%;
-    padding: 3rem 0 3rem 0;
-    gap: 2rem;
+    width: 100%;
+    padding: 3rem 3vw 3rem 3vw;
+    gap: 3.5rem;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-evenly;
-
-
 }
 
 .collectioniconsdiv {
@@ -286,8 +290,10 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     border-radius: 10%;
     text-align: center;
-    max-width: 160px;
+    max-width: 140px;
 }
+
+
 
 .collectioniconsdiv > p {
     text-transform: uppercase;
@@ -298,36 +304,99 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 
 .exhibits {
     background-image: url(images.img/girl-with-red-hat-BBZDOHhYU2s-unsplash\ 1.jpg);
+    background-size:auto;
     height: 392px;
     padding: 2rem;
     color: white;
-    object-fit: scale-down;
 }
 
-.h2indexwhite {
-    font-size: 3vw;
+.h2index {
+    font-size: 2.5rem;
     text-transform: uppercase;
     font-family: 'Fjalla One';
     margin-bottom: 1rem;
 }
 
 .exhibitsdiv {
-    text-align: right;
-    width: 400px;
-    float: right;
+    max-width: 400px;
+
 }
 
 .exhibitsdiv > p {
     margin-bottom: 3rem;
 }
 
-#seeourcollectionbutton {
+.clearbutton {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 1rem 3rem 1rem 3rem;
     border: solid 2px white;
 }
+
+@media screen and (max-width: 400px) {
+
+    .collectionicons {
+        gap: 1rem;
+    }
+
+    .exhibitsdiv {
+        text-align: center;
+    }
+
+    #seeourcollectionbutton {
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .exhibitsdiv > p {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Explore */
+
+.exploreindexsection {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.exploreindeximg {
+    flex: 50%;
+}
+
+.exploreindextext {
+    flex: 40%;
+    padding: 3rem 3rem 3rem 5vw;
+}
+
+.exploreindextext > p {
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
+}
+
+.blackbutton {
+    color: black;
+    border: solid 2px black;
+
+}
+
+@media screen and (max-width: 600px) {
+    .exploreindexsection {
+        flex-direction: column-reverse;
+    }
+
+    .exploreindeximg {
+        padding-left: 0.5rem;
+    }
+
+    .exploreindextext {
+        text-align: center;
+    }
+
+}
+
+
 
 
 
@@ -450,63 +519,6 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     padding: 1vw 3vw 1vw 3vw;
     box-shadow: 0 32px 64px rgba(0,0,0,0.07);
 }
-
-/*Explore*/
-
-.h2headline {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3vw;
-}
-
-
-.exploresection {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.explorediv {
-    height: 500px;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-}
-
-.exploreimg {
-    height: 350px;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-}
-
-.exploreimg > img {
-    width: 100%;
-    height: 100%;
-}
-
-.pexplore {
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    margin-top: 0.7rem;
-    height: 108px;
-    font-size: 0.9rem;
-    padding: 0.8rem;
-    text-align: justify;
-}
-
-.explorebutton {
-    width: 100%;
-    text-align: center;
-    margin: 1rem 0 3rem 0;
-}
-
-.explorebutton a {
-    background-color: var(--yellow);
-    color: black;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-}
-
 
 /*julereklame*/
 
@@ -2096,6 +2108,3 @@ fieldset {
 .h3marg {
     margin-bottom: 2rem;
 }
-
-
-
