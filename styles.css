@@ -177,11 +177,11 @@ input#search:hover {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Fjalla One';
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 
 }
 
