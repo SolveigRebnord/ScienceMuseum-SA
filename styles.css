@@ -5,6 +5,7 @@
 
 p {
     margin: 0;
+    font-size: 0.9rem;
 }
 
 
@@ -315,6 +316,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     text-transform: uppercase;
     font-family: 'Fjalla One';
     margin-bottom: 1rem;
+    letter-spacing: 2px;
 }
 
 .exhibitsdiv {
@@ -359,6 +361,8 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     display: flex;
     flex-direction: row;
     align-items:center;
+    background-color: #DBE4F2;
+    padding: 3rem 0 3rem 0;
 }
 
 .exploreindeximg {
@@ -373,6 +377,11 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 .exploreindextext > p {
     margin-bottom: 3rem;
     font-size: 0.9rem;
+}
+
+.exploreindextext > h2 {
+    font-size: 5rem;
+
 }
 
 .blackbutton {
@@ -394,244 +403,262 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
         text-align: center;
     }
 
-}
-
-
-
-
-
-
-
-/* exhbitits collage*/
-
-.flex5 {
-    width: 100%;
-    height: 27rem;
-    display: flex;
-    flex-direction: row;
-}
-
-.flex5 img {
-    max-width: 288px;
-}
-
-@media screen and (max-width: 500px) {
-    .flex5 {
-        flex-wrap: wrap;
-        height: fit-content;
+    .exploreindextext > h2 {
+        font-size: 3rem;
     }
 
-    .flex5 img {
-        max-width: 250px;
-        max-height: 250px;
-    }
-
-
 }
 
 
+/* Midi Menu */
 
-/*liten meny*/
-.quickmenu {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 20rem;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 2rem;
-    flex-wrap: wrap;
-    gap: 2rem 4rem;
-    margin-bottom: 4rem;
-}
-
-.quickmenubox {
+.indexmidmenu {
     display: flex;
     flex-direction: column;
-    width: 9rem;
-    height: 8.5rem;
-    text-align: center;
-    background-color: var(--purple);
-    box-shadow:  0px 25px 20px -20px rgba(0, 0, 0, 0.45);
-    border-radius: 4px;
+    width: 80%;
+    gap: 0.5rem;
+    margin: 3rem auto 3rem auto;
 }
 
-.quickmenubox a {
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 3.5rem 1.2rem 3.5rem 1.2rem;
-    vertical-align: middle;
-}
-
-@media screen and (max-width: 750px) {
-    .quickmenubox {
-        width: 100%;
-        height: 3rem;
-    }
-
-    .quickmenu {
-        margin-bottom: 9rem;
-    }
-
-    .quickmenubox a {
-        padding: 1rem 4rem 1rem 4rem;
-        font-size: 14px;
-    }
-}
-
-/*Robot Hånd */
-
-.hero2 img {
+.midmenudiv {
     width: 100%;
-    height: 40vw;
-}
-
-.hero2 {
-    position: relative;
-}
-
-.h2picture, .p-picture {
-    position: absolute;
-    text-align: right;
-    color: white;
-}
-
-.h2picture {
-    right: 5.5vw;
-    top: 10vw;
-    font-size: 2.5vw;
-}
-
-.p-picture {
-    right: 5.5vw;
-    top: 29vw;
-    font-size: 2vw;
-}
-
-.hero2button {
-    position: absolute;
-    right: 5.5vw;
-    top: 33vw;
-    background-color: var(--yellow);
-    color: var(--black);
-    padding: 1vw 3vw 1vw 3vw;
-    box-shadow: 0 32px 64px rgba(0,0,0,0.07);
-}
-
-/*julereklame*/
-
-.christmasnews {
-    width: 100%;
-    height: 40vw;
-    background-image: url(images.img/granbar_optimized.jpg);
-    background-size: cover;
+    height: 4rem;
+    background-color: #06040E;
+    padding: 0.5rem 2rem 0.5rem 2rem;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    color: white;
-    margin-bottom: 4rem;
-    padding: 1rem;
 }
 
-.christmasheadline > p {
-    font-size: 4vw;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: rgb(177, 173, 173) 0px 2px 4px;
-
-}
-
-.christmasheadline > h2 {
-    font-size: 6vw;
-    margin: 1vw 0 1vw 0;
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 2px;
-    text-shadow: rgb(177, 173, 173) -1px 1px 4px;
-}
-
-.christmasinfo {
-    text-align: right;
-    text-transform: uppercase;
-}
-
-.christmasinfo p {
-    padding-bottom: 3rem;
-    font-size: 1.5vw;
-    letter-spacing: 2px;
-
-}
-
-.pheadline {
-    font-weight: bold;
-}
-
-p.pheadline {
-    font-size: 1.8vw;
-}
-
-
-.christmasbutton {
-    background-color: rgba(245, 245, 245, 0.096);
-    border: solid white 2px;
-    color: white;
-    padding: 1vw 3vw 1vw 3vw;
-}
-
-@media screen and (max-width: 700px) {
-
-    .christmasinfo > p {
-        display: none;
-    }
-
-    .christmasbutton {
-        padding: 2vw 4vw 2vw 4vw;
-        font-size: 2vw;
-    }
-    
-}
-
-/*Get involved*/
-
-.getinvolvedsection {
-    width: 90%;
-    display: flex;
-    gap: 0.8rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    height: 550px;
-    margin-left: auto;
-    margin-right: auto;
+.midmenua {
+    background-color: #06040E;
     padding: 1.5rem;
 }
 
-.getinvolveddiv {
-    flex: 33%;
-    padding: 1rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    text-align: center;
-    width: 30%;
-    height: fit-content;
+.floatright {
+    float: right;
+    font-size: 1rem;
 }
 
-.getinvolvedh3 {
-    text-transform: uppercase;
-    background-color: var(--purple);
+.guideicon {
     color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
 }
 
-.getinvolvedbutton {
-    background-color: var(--yellow);
-    color: black;
+.midmenua {
+    color: white;
+    text-decoration: none;
+    font-family: 'Fjalla One';
+    text-transform: uppercase;
 }
+
+
+
+/*learning by doing*/
+
+.learningbydoingtopdiv {
+    position: relative;
+    height: 38vw;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .learningbydoingtopdiv {
+        height: 45vw;
+    }
+}
+
+
+
+.learningbydoingtopdiv > div {
+    position: absolute;
+}
+
+.leftoverlap > img {
+    opacity: 60%;
+}
+
+.leftoverlap, .rightoverlap {
+    max-width: 500px;
+
+}
+
+.rightoverlap {
+    left: 45%;
+    top: 25%;
+}
+
+.leftoverlap {
+    right: 45%;
+}
+
+.rightoverlap > img, .leftoverlap > img {
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .leftoverlap {
+        display: none;
+    }
+
+    .rightoverlap {
+        top: 0;
+        left: 0;
+    }
+
+    .learningbydoingtopdiv {
+        height: 60vw;
+    }
+
+   
+}
+
+.h2lowercase {
+    text-transform: none;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+
+.learningbydoingflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 7vw 0 7vw;
+    gap: 1rem;
+}
+
+
+.learningbydoingflex p:last-child {
+    text-align: right;
+}
+
+
+@media screen and (max-width: 500px) {
+    .learningbydoingflex {
+    flex-direction: column;
+    }
+
+    .learningbydoingflex p:last-child {
+        font-size: 0.8rem;
+    }
+}
+
+
+/*get involved index */
+
+.getinvolvedindexsection {
+    height: fit-content;
+    width: 100%;
+    background-color: #8D8DA1;
+    padding: 4rem 0 4rem 0;
+    margin: 0 0 3 0;
+}
+
+.getinvolvedindexflex {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.getinvolvedindexflex > div {
+    padding: 1.5rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-color: white;
+    flex: 30%;
+    max-width: 260px;
+}
+
+.getinvolvedindexflex > div > img {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.getinvolvedindexh2 {
+   text-align: center;
+   line-height: 15px;
+    color: #8D8DA1;
+    padding: 0;
+    margin: 0;
+    margin-top: 8rem;
+}
+
+.getinvolvedindexh2 > h2 {
+    font-size: 4rem;
+}
+
+.getinvolvedindexdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.getinvolvedindexdiv > h3 {
+    text-transform: uppercase;
+    margin: 0.5rem 0 0.5rem 0;
+    font-family: 'Fjalla One';
+}
+
+.getinvolvedindexdiv > p {
+    margin-bottom: 1rem;
+}
+
+
+.blacksparrow {
+    float: right;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.blacksparrow i {
+    color: black;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .getinvolvedindexflex > div {
+        max-width: 470px;
+    }
+    .getinvolvedindexflex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .getinvolvedindexh2 > h2 {
+        font-size: 3rem;
+        line-height: 1px;
+    }
+}
+
+
+
+
+
+
+
 
 footer {
     width: 100%;
-    height: 25vw;
-    background-image: url(images.img/brandon-vazquez-koC5eG6v6ew-unsplash.jpg);
+    height: fit-content;
+    padding: 4vw;
+    background-color: #06040E;
     display: flex;
+    flex-wrap: wrap;
     color: white;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 footer ul {
@@ -642,18 +669,76 @@ footer ul {
 
 footer ul li:first-child {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 footer ul li {
     margin-bottom: 1rem;
-    text-transform: uppercase;
     font-family: sans-serif;
+    font-size: 0.9rem;
 }
 
 footer ul li:last-child {
     margin-bottom: 0;
 }
+
+.midfooterdiv, .midfooterdivmobil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footericon {
+    font-size: 2.2rem;
+}
+
+.midfooterdiv > div, .midfooterdivmobil > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.textalignright {
+    text-align: right;
+}
+
+.footerbutton {
+    padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+    font-size: 0.6rem;
+}
+
+.midfooterdivmobil {
+    gap: 2rem;
+}
+
+
+@media screen and (max-width: 640px) {
+    footer {
+        padding: 2rem 3rem 2rem 3rem;
+        gap: 2rem;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textalignright {
+        text-align: center;
+    }
+
+    .midfooterdiv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 639px) {
+    .midfooterdivmobil {
+        display: none;
+    }
+}
+
+
+
+
 
 
 /*__----------------------------------------------------plan your visit----------------------------------------------------------*/
