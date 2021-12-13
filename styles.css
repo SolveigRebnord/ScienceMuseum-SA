@@ -56,7 +56,7 @@ header {
     width: 100%;
     background-color: black;
     height: fit-content;
-    padding: 3vw;
+    padding: 3vw 3vw 0 3vw;
 }
 
 #logotext {
@@ -70,10 +70,6 @@ header {
 
 
 
-#logo > img {
-    max-width: 10vw;
-    display: block;
-}
 
 .topheader {
     display: flex;
@@ -172,8 +168,9 @@ input#search:hover {
 }
 
 .bottomheaderimg > img {
-    max-width: 24vw;
+    width: 100%;
 }
+
 
 #h1hero {
     font-size: 7vw;
@@ -211,6 +208,12 @@ input#search:hover {
 @media screen and (max-width: 769px) {
     .topheader {
         justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #logo img {
+        max-width: 3rem;
+        display: block;
     }
 }
 
@@ -219,13 +222,12 @@ input#search:hover {
         flex-direction: column-reverse;
         padding: 0 1rem 0 1rem;
     }
-    #logo > img {
-        min-width: 15vw;
-    }
 
     .normalicons {
         display: none;
     }
+
+
 
 }
 
