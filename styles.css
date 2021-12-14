@@ -897,6 +897,11 @@ footer ul li:last-child {
     }
 }
 
+.underheaderplanyourvisit > h1 {
+    font-size: 7.5vw;
+    line-height: 5.4vw;
+}
+
 
 .h3planyourvisit {
     text-transform: uppercase;
