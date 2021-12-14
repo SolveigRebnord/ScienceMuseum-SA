@@ -248,24 +248,24 @@ div.burger-menu {
 
 nav.burger-menu-nav {
     display: none;
-    background-color: #8D8DA1;
+    background-color: white;
     width: 250px;
     height: fit-content;
     padding: 1rem;
 }
 
-nav.burger-menu-nav > ul {
+nav.burger-menu-nav > ul, .forthissectionburgermenu > ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav.burger-menu-nav > ul > li {
-    margin: 0.5rem 0 0.5rem 0;
+nav.burger-menu-nav > ul > li, .forthissectionburgermenu > ul > li {
+    margin: 0.5rem 0 0.8rem 0;
     text-align: center;
 }
 
-nav.burger-menu-nav > ul > li:last-child {
+nav.burger-menu-nav > ul > li:last-child, .forthissectionburgermenu > ul > li:last-child {
     margin-bottom: 0;
 }
 
@@ -273,9 +273,10 @@ nav.burger-menu-nav > ul > li > a {
     display: block;
     text-decoration: none;
     padding: 0.5rem 2rem 0.5rem 2rem;
-    border: double black;
-    background-color: white;
-    color: black;
+    background-color: #8D8DA1;
+    color: white;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
 }
 
 
@@ -286,6 +287,23 @@ input#burger-menu {
 input#burger-menu:checked ~ nav.burger-menu-nav {
     display: block; 
 }
+
+.forthissectionburgermenu {
+    margin-top: 1rem;
+}
+
+.forthissectionburgermenu > p {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fjalla One';
+}
+
+.forthissectionburgermenu > ul > li {
+    text-align: left;
+}
+
+
 
 @media screen and (min-width: 780px) {
     #burgerlabel {
@@ -305,6 +323,8 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     margin-top: 1rem;
     margin-left: 0.5rem;
 }
+
+
 
 
 /*h1 og menu*/
@@ -335,6 +355,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     padding: 1rem 0 1rem 3vw;
     margin: 2rem 0 2rem 0;
     background-color: #8D8DA1;
+    
     color: white;
     text-transform: uppercase;
     border-top: double black;
@@ -353,6 +374,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
   margin-right: 3rem;
   font-family: 'Fjalla One';
   font-size: 1.5rem;
+  
 }
 
 @media screen and (max-width:800px) {
