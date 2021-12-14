@@ -39,8 +39,11 @@ h1, h2, h3 {
 }
 
 .breadcrumbs {
+    margin: 3rem 0 3rem 3vw;
+}
+
+.breadcrumbs > a {
     color: black;
-    margin-bottom: 3rem;
 }
 
 
@@ -1272,7 +1275,7 @@ div.bookingbuttondiv {
 }
 
 .exploremain {
-    margin: 0 4vw 0 4vw;
+    margin: 0 6vw 0 6vw;
 }
 
 .clubsection {
@@ -1291,7 +1294,7 @@ div.bookingbuttondiv {
 }
 
 .clubdivtext {
-    padding: 3rem;
+    padding: 5rem;
     width: 100%;
     height: 50vw;
 }
@@ -1329,9 +1332,25 @@ div.bookingbuttondiv {
     right: 5px;
 }
 
-@media screen and (min-width:1200px) {
+a.clubbutton {
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #8D8DA1;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.clubbutton {
+    margin: 2rem auto 0 auto;
+    text-align: center;
+}
+
+
+@media screen and (max-width:1200px) {
     .clubdivtext {
-        font-size: 1rem;
+        padding: 1rem;
+      
     }
 }
 
@@ -1344,6 +1363,11 @@ div.bookingbuttondiv {
     }
     .clubsection {
         gap: 1rem;
+    }
+
+    .clubsection {
+        gap: 1rem;
+        flex-direction: column;
     }
 }
 
@@ -1358,18 +1382,10 @@ div.bookingbuttondiv {
        font-size: 3rem;
     }
 
-    .clubsection {
-        gap: 1rem;
-        flex-direction: column;
-    }
+  
 }
 
-@media screen and (min-width:600px) {
 
-    .clubdivimageyoungstar > img, .clubdivimageholiday > img {
-        display: none;
-    }
-}
 
 
 .newsflex {
