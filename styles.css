@@ -330,6 +330,12 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     .underheadermenu {
         display: none;
     }
+
+    .underheader > h1 {
+        font-size: 12vw;
+        line-height: 8.5vw;
+    }
+
 }
 
 /*collection icons*/
