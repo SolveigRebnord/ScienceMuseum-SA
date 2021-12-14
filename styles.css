@@ -248,7 +248,36 @@ div.burger-menu {
 
 nav.burger-menu-nav {
     display: none;
+    background-color: #8D8DA1;
+    width: 250px;
+    height: fit-content;
+    padding: 1rem;
 }
+
+nav.burger-menu-nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.burger-menu-nav > ul > li {
+    margin: 0.5rem 0 0.5rem 0;
+    text-align: center;
+}
+
+nav.burger-menu-nav > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+nav.burger-menu-nav > ul > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border: double black;
+    background-color: white;
+    color: black;
+}
+
 
 input#burger-menu {
     display: none;
@@ -306,7 +335,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     padding: 1rem 0 1rem 3vw;
     margin: 2rem 0 2rem 0;
     background-color: #8D8DA1;
-    color: black;
+    color: white;
     text-transform: uppercase;
     border-top: double black;
     border-bottom: double black;
@@ -709,6 +738,30 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 }
 
 
+.prefootermenu {
+    margin: 6rem auto 2rem auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 3rem;
+}
+
+.prefootermenu > div > a > i {
+    color: black;
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.prefootermenu > div > a {
+    text-decoration: none;
+    color: black;
+}
+
+.prefootermenu > div {
+    text-align: center;
+}
 
 
 
@@ -1048,6 +1101,7 @@ div.bookingbuttondiv {
 
 .collectionsection {
     display: flex;
+    flex-direction: row;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -1077,7 +1131,7 @@ div.bookingbuttondiv {
 .iconcollection {
     max-width: 4rem;
     max-height: fit-content;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 0.5rem auto;
 }
 
 
@@ -1105,19 +1159,33 @@ div.bookingbuttondiv {
 .standoutdiv {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     padding: 0.6rem
+}
 
+.collectionreversed {
+    flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width:1200px) {
+    .hideforspace {
+        display: none;
+    }
 }
 
 @media screen and (max-width:1000px) {
+   
     .collectionsection {
         flex-direction: column;
         width: 90%;
     }
-
     .collectionsectiondivtext {
         gap: 1rem;
     }
+    .hideforspace {
+        display:initial;
+    }
 }
+
 
 
 
