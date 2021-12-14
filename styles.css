@@ -56,7 +56,7 @@ header {
     width: 100%;
     background-color: black;
     height: fit-content;
-    padding: 3vw 3vw 4vw 3vw;
+    padding: 3vw 3vw 1rem 3vw;
 }
 
 #logotext {
@@ -150,6 +150,7 @@ input#search:hover {
     justify-content: space-around;
     align-items: center;
     padding: 0 15vw 0 15vw;
+    background-color: black;
 }
 
 .bottomheader > div {
@@ -180,10 +181,12 @@ input#search:hover {
     font-family: 'Fjalla One';
     color: white;
     letter-spacing: 2px;
-
     font-size: 1.1rem;
-
 }
+
+    
+
+
 
 @media screen and (max-width: 780px) {
     .topheaderdiv {
@@ -218,7 +221,7 @@ input#search:hover {
 @media screen and (max-width: 600px) {
     .bottomheader {
         flex-direction: column-reverse;
-        padding: 0 1rem 0 1rem;
+        padding: 0 1rem 2rem 1rem;
     }
 
     .bottomheader > div > p {
@@ -274,6 +277,60 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     margin-left: 0.5rem;
 }
 
+
+/*h1 og menu*/
+
+
+.currentsite {
+    font-weight: bolder;
+}
+
+.underheader {
+    background-color: black;
+    color: white;
+    height: fit-content;
+    text-align: right;
+    padding: 0 10vw 0 0;
+}
+
+
+.underheader > h1 {
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-family: 'Fjalla One';
+    letter-spacing: 2px;
+    line-height: 6.5vw;
+}
+
+.underheadermenu {
+    padding: 1rem 0 1rem 3vw;
+    margin: 2rem 0 2rem 0;
+    background-color: #8D8DA1;
+    color: black;
+    text-transform: uppercase;
+    border-top: double black;
+    border-bottom: double black;
+}
+
+.underheadermenu > ul {
+    list-style: none;
+    padding: 0 0 1.5rem 0;
+    margin: 0;
+}
+
+.underheadermenu > ul > li {
+  font-family: sans-serif;
+  float: left;
+  margin-right: 3rem;
+  font-family: 'Fjalla One';
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width:800px) {
+    .underheadermenu {
+        display: none;
+    }
+}
 
 /*collection icons*/
 
@@ -981,420 +1038,84 @@ div.bookingbuttondiv {
     }
 }
 
-/*-------------------------------------------------------eplore------------------------------------------------------------*/
+/*-------------------------------------------------------collection nå------------------------------------------------------------*/
 
-.exploresection {
-    width: 100%;
-    height: 48vw;
-    background-size: cover;
-    padding: 3rem 0rem 3rem 3rem;
-}
-
-.spacesection {
-    background-image: url(images.img/cosmo_optimized.jpg);
+.collectionsection {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#astronaut {
-    max-width: 41vw;
-    flex: 50%;
-}
-
-.space {
-    flex: 40%;
-    width: 100%;
-    height: fit-content;
-    padding: 3rem 6rem 3rem 6rem;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-}
-
-.pspace {
-    line-height: 20px;
-    margin-bottom: 3rem;
-    text-align: center;
-    background-color: whitesmoke;
-    color: black;
-    padding: 1rem;
-}
-
-.h2space {
-    margin: 0 0 3rem 0;
-    font-size: 8vw;
-    letter-spacing: 15px;
-    text-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-}
-
-.spacebutton {
-   background-color: white;
-   color: black;
-}
-
-@media screen and (max-width: 1100px) {
-    .space {
-        font-size: 0.7rem;
-        line-height: 10px;
-    }
-
-    p.pspace {
-       margin-bottom: 1.5rem;
-    }
-
-    .space {
-        padding: 1rem 1.5rem 1rem 1.5rem;
-    }
-
-    .exploresection {
-        padding: 1rem 0rem 3rem 3rem;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #astronaut {
-        display: none;
-    }
-    .exploresection {
-        padding: 2rem 1rem 2rem 1rem;
-    }
-    .spacesection {
-        display: inherit;
-    }
-    .h2space {
-        margin-bottom: 1.5rem;
-    }
-    .space {
-        padding: 0;
-        line-height: 6px;
-        margin-top: 0.5rem;
-    }
-    .spacebutton {
-        padding: 0.5rem 3rem 0.5rem 3rem;
-        font-size: 0.6rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .exploresection {
-        height: 22rem;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-
-    .exploresection {     
-    background-size: cover;
-    background-position: center center;
-
-    }
-
-    .medicinsection {
-        background-image: url(images.img/medicin_mobil.jpg);
-    }
-
-    .evolutionsection {
-        background-image: url(images.img/monkey_mobil.jpg);
-    }
-
-    .ecologysection {
-        background-image: url(images.img/ecology_mobil.jpg);
-    }
-}
-
-
-
-.allsections {
-    width: 100%;
-    height: 48vw;
-    background-size: cover;
-    background-position: center center;
-}
-
-
-
-.medicinsection {
-    background-image: url(images.img/pawel-czerwinski-2Y8ol_OBS1I-unsplash-kopi_2_30.jpg);
-    padding: 3rem 9rem 3rem 3rem;
-}
-
-.exploreh2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 3vw;
-    border-bottom: solid black 2px;
-    padding: 0 0 1rem 0;
-}
-
-div.exploretextright {
-    float: right;
-    width: 40vw;
-    font-size: 1.5vw;
-    text-align: justify;
-}
-
-
-@media screen and (max-width: 800px) {
-    .medicinsection {
-        padding: 0.2rem 5.5rem 3rem 3rem;
-    }
-    div.exploretextright {
-        font-size: 0.8rem;
-        width: 300px;
-    }
-
-    .exploreh2 {
-        font-size: 1.5rem;
-    }
-    
-}
-
-@media screen and (max-width: 500px) {
-    .medicinsection {
-        padding: 0rem 2.5rem 1rem 3rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .allsections {
-        height: 22rem;
-    }
-}
-
-
-
-
-.evolutionsection {
-    background-image: url(images.img/benjamin-suter-C2MSIMEgfGI-unsplash_2_48.jpg);
-}
-
-div.exploretextleft {
-    width: 40vw;
-    font-size: 1.5vw;
-
-    padding: 4rem 0 0 6rem;
-    color: white;
-}
-
-.whiteexploreh2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 3vw;
-    border-bottom: solid white 2px;
-    color: white;
-    margin: 0;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 800px) {
-    div.exploretextleft {
-        padding: 3rem 0rem 0rem 3.5rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    div.exploretextleft {
-        width: 45vw;
-        font-size: 0.8rem;
-        line-height: 12px;
-        padding: 2.5rem 0rem 0rem 1.5rem;
-    }
-    .whiteexploreh2 {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width:330px) {
-    div.exploretextleft {
-        width: 55vw;
-    }
-}
-
-
-
-
-.robotsection {
-    background-image: url(images.img/robot-gae3e73577_1280.jpg);
-    padding: 4rem 0 0 4rem;
-}
-
-.roboth2 {
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
-    text-align: center;
-}
-
-.robotheadline {
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-
-.robotdiv {
-    width: 14rem;
-    text-align: justify;
-    color: white;
-}
-
-@media screen and (max-width:800px) {
-    .robotsection {
-        padding: 2rem 0 0 2rem;
-        font-size: 0.8rem;
-    }
-    .roboth2 {
-        font-size: 1.2rem;
-    }
-}
-
-
-@media screen and (max-width:500px) {
-    .robotsection {
-        padding: 1rem 0 0 1rem;
-        font-size: 0.8rem;
-    }
-    .robotdiv {
-        width: 8rem;
-        text-align: left;
-    }
-    .robotheadline {
-    margin-bottom: 0.3rem;
-    padding: 0.5rem;
-    }
-}
-
-
-.ecologysection {
-    background-image: url(images.img/jan-kopriva-nex3P5iBnPg-unsplash_5_29.jpg);
-    padding: 2rem 2rem 2rem 2rem;
-}
-
-.ecologyheadline {
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 24rem;
-    margin-top: 1rem;
-    font-size: 3.5rem;
-    letter-spacing: 5px;
-    text-align: center;
-    text-shadow: var(--black) solid 12px 12px;
-}
-
-.ecologyheadline > h2 {
-    margin: 0;
-}
-
-
-.flexecology {
+.collectionsectiondivtext {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 44rem;
-    align-items: center;
-    color: white;
+    gap: 0.5rem;
+    flex: 50%;
+    padding: 3rem 3rem 0 3rem;
+    border: double black;
+    text-align: justify;
 }
 
-#ecologyright {
-    text-align: right;
+.collectionsectiondivimg {
+    flex: 60%;
 }
 
-div.ecologyflex {
-    height: 200px;
-    color: white;
+.collectionsectiondivimg > img {
+    height: 100%;
+    border: double black;
 }
 
-@media screen and (max-width:1100px) {
-    .ecologyheadline {
-        margin-bottom: 9.5rem;
-    }
-    .flexecology {
-        gap: 36rem;
-    }
-
-}
-
-@media screen and (max-width:800px) {
-    .ecologyheadline {
-        margin-bottom: 3rem;
-        font-size: 2.5rem;
-    }
-    .flexecology {
-        gap: 28rem;
-        font-size: 0.8rem;
-    }
-
-    .ecologysection {
-        padding-top: 0.5rem;
-    }
-
-}
-
-@media screen and (max-width:500px) {
-    .flexecology {
-        gap: 0;
-    }
-    .ecologyheadline {
-        font-size: 1rem;
-    }
+.iconcollection {
+    max-width: 7vw;
+    max-height: fit-content;
+    margin: 0 auto 0 auto;
 }
 
 
-
-
-.gridexplore {
-    display: grid;
-    grid-template-areas:
-    'one two'
-    'three two'
-    'three four';
-}
-
-.img1 {
-    grid-area: one;
-}
-
-.img2 {
-    grid-area: two;
-}
-
-.img3 {
-    grid-area: three;
-}
-
-.img4 {
-    grid-area: four;
-}
-
-.divforposition {
-    position: relative;
-}
-
-.abovegrid {
-    position: absolute;
-    width: 30vw;
-    background-color: white;
-    top: 26.5vw;
-    left: 35vw;
-    padding: 2vw;
+.collectionsectiondivtext > div > h2 {
+    color: black;
+    text-transform: uppercase;
     text-align: center;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    font-size: 1.2vw;
+    border-bottom:black double;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-family: 'Fjalla One';
 }
 
-@media screen and (max-width:500px) {
-    .abovegrid {
-        top: 22.5vw;
-        left: 32.5vw;
-        font-size: 1.8vw;
-        width: 35vw;
-        padding: 3vw;
+.pheadercollectionsection {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Fjalla One';
+}
+
+.collectionsectiondivtext > div > ul {
+    list-style:circle;
+    padding-left: 1rem;
+}
+
+.standoutdiv {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 0.6rem
+
+}
+
+@media screen and (max-width:1000px) {
+    .collectionsection {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .collectionsectiondivtext {
+        gap: 1rem;
+    }
+
+    .iconcollection {
+        max-width: 3rem;
     }
 }
+
 
 
 /*--------------------------------------------------explore------------------------------------------------------------------*/
