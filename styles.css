@@ -14,6 +14,9 @@ p {
     --yellow: #E4A546;
     --white: #ffffff;
     --purple: #32253F;
+
+    --breadtext: 'Montserrat';
+    --narrowheader: 'Fjalla One';
 } 
 
 img {
@@ -47,9 +50,6 @@ h1, h2, h3 {
 }
 
 
-:root {
-    --header: 'Fjalla One', sans-serif;
-}
 
 /*----------------------------------------------------INDEX-------------------------------------------------------------*/
 
@@ -86,13 +86,20 @@ header {
 
 .mid-menu > ul > li {
     float: left;
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
+
+.mid-menu > ul > li:last-child {
+    margin-right: 0;
+}
+
 
 .mid-menu a {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
+    font-family: var(--narrowheader);
+    font-size: 1.2rem;
 }
 
 .divicons {
@@ -160,9 +167,11 @@ input#search:hover {
     flex: 30%;
 }
 
-.bottomheader > div > p{
+.bottomheader > div > p {
     max-width: 380px;
     margin-bottom: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 .bottomheaderimg > img {
@@ -192,7 +201,7 @@ input#search:hover {
 
 
 @media screen and (max-width: 780px) {
-    .topheaderdiv {
+    #logotext {
         display: none;
     }
 
@@ -481,7 +490,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     display: flex;
     flex-direction: row;
     align-items:center;
-    background-color: #DBE4F2;
+    background-color: white;
     padding: 3rem 0 3rem 0;
 }
 
@@ -856,12 +865,12 @@ footer ul li:last-child {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 820px) {
     footer {
         padding: 2rem 3rem 2rem 3rem;
         gap: 2rem;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         text-align: center;
     }
 
@@ -874,9 +883,15 @@ footer ul li:last-child {
     }
 }
 
-@media screen and (min-width: 639px) {
+@media screen and (min-width: 820px) {
     .midfooterdivmobil {
         display: none;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    footer {
+        padding: 2rem 1rem 1rem 1rem;
     }
 }
 
@@ -1132,6 +1147,10 @@ div.bookingbuttondiv {
 
 /*-------------------------------------------------------collection nå------------------------------------------------------------*/
 
+
+
+
+
 .collectionsection {
     display: flex;
     flex-direction: row;
@@ -1219,6 +1238,10 @@ div.bookingbuttondiv {
     }
 }
 
+
+h2.robotfont {
+    font-family: 'Orbitron';
+}
 
 
 
