@@ -9,6 +9,10 @@ p {
     font-family: var(--breadtext);
 }
 
+mark {
+    text-decoration: underline;
+    background: none;
+}
 
 a {
     text-decoration: none;
@@ -40,8 +44,6 @@ img {
 body {
     margin: 0;
 }
-
-
 
 h1, h2, h3 {
     padding: 0;
@@ -130,13 +132,9 @@ text-decoration: none;
 }
 
 
-
-
 .shadow {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
-
-
 
 
 h2 {
@@ -150,7 +148,7 @@ h2 {
 
 
 
-.donatesponsorsection > div > h2, .collectionsection > div > div > h2, .exhibitsdiv > h2 {
+.donatesponsorsection > div > h2, .collectionsection > div > div > h2, .exhibits > div  > h2 {
     margin: 0 0 1rem 0;
 }
 
@@ -160,9 +158,7 @@ h2 {
 
 .getinvolvedindexh2 > h2 {
     margin: 0;
-    
 }
-
 
 h3, .h3header {
     font-family: var(--narrowheader);
@@ -173,15 +169,11 @@ h3, .h3header {
     color: black;
 }
 
-
 li {
     font-family: var(--breadtext);
     font-size: 0.9rem;
 }
 
-.indexmidmenu{
-    margin-bottom: 6rem;
-}
 
 .white {
     color: white;
@@ -190,6 +182,7 @@ li {
 .white a {
     color: white;
 }
+
 
 
 
@@ -203,8 +196,6 @@ header {
     height: fit-content;
     padding: 3vw 3vw 1rem 3vw;
 }
-
-
 
 #logotext {
     font-size: 2rem;
@@ -237,6 +228,10 @@ header {
     margin-right: 0;
 }
 
+.indexmidmenu {
+    margin-bottom: 6rem;
+}
+
 
 .mid-menu a {
     text-transform: uppercase;
@@ -244,6 +239,10 @@ header {
     color: white;
     font-family: var(--narrowheader);
     font-size: 1.2rem;
+}
+
+a.currentsite {
+    color: var(--yellow);
 }
 
 .divicons {
@@ -342,8 +341,6 @@ input#search:hover {
 
     
 
-
-
 @media screen and (max-width: 780px) {
     #logotext {
         display: none;
@@ -352,8 +349,6 @@ input#search:hover {
     header {
         height: fit-content;
     }
-
-    
 }
 
 @media screen and (min-width: 780px) {
@@ -393,11 +388,6 @@ input#search:hover {
 }
 
 
-
-
-
-
-/*burger menu*/
 div.burger-menu {
     display: inline;
 }
@@ -430,12 +420,9 @@ nav.burger-menu-nav > ul > li > a {
     display: block;
     text-decoration: none;
     padding: 0.5rem 2rem 0.5rem 2rem;
-    background-color: #8D8DA1;
+    background-color: var(--bluepurple);
     color: white;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-
 }
-
 
 input#burger-menu {
     display: none;
@@ -460,21 +447,6 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     text-align: left;
 }
 
-
-
-@media screen and (min-width: 780px) {
-    #burgerlabel {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 780px) {
-    .mid-menu {
-        display: none;
-    }
-}
-
 .fa-bars {
     font-size: 1.5rem;
     margin-top: 1rem;
@@ -482,14 +454,18 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 }
 
 
-
-
-/*h1 og menu*/
-
-
-.currentsite {
-    font-weight: bolder;
+@media screen and (min-width: 780px) {
+    #burgerlabel {
+        display: none;
+    }
 }
+@media screen and (max-width: 780px) {
+    .mid-menu {
+        display: none;
+    }
+}
+
+
 
 .underheader {
     background-color: black;
@@ -541,10 +517,10 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
         font-size: 12vw;
         line-height: 8.5vw;
     }
-
 }
 
-/*collection icons*/
+
+
 
 .collectionicons {
     display: flex;
@@ -553,12 +529,10 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     width: 100%;
     padding: 3rem 3vw 3rem 3vw;
     gap: 3.5rem;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: space-evenly;
 }
 
-.collectioniconsdiv {
+.collectionicons > div {
     padding: 2rem;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     border-radius: 10%;
@@ -567,11 +541,10 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 }
 
 
-
-.collectioniconsdiv > p {
+.collectionicons > div > p {
     text-transform: uppercase;
     font-size: 0.8rem;
-    color: darkgrey;
+    color: grey;
     margin-top: 0.5rem;
 }
 
@@ -584,14 +557,14 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 }
 
 
-.exhibitsdiv {
+.exhibits > div {
     max-width: 400px;
-
 }
 
-.exhibitsdiv > p {
+.exhibits > div > p {
     margin-bottom: 3rem;
 }
+
 
 
 @media screen and (max-width: 400px) {
@@ -600,20 +573,18 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
         gap: 1rem;
     }
 
-    .exhibitsdiv {
+    .exhibits > div {
         text-align: center;
     }
 
-    #seeourcollectionbutton {
-        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    }
-
-    .exhibitsdiv > p {
+    .exhibits > div > p {
         margin-bottom: 1.5rem;
     }
 }
 
-/* Explore */
+
+
+
 
 .exploreindexsection {
     display: flex;
@@ -642,11 +613,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     font-size: 5rem;
 }
 
-.blackbutton {
-    color: black;
-    border: solid 2px black;
 
-}
 
 @media screen and (max-width: 600px) {
     .exploreindexsection {
@@ -668,9 +635,6 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 
 
 
-
-/* Midi Menu */
-
 .indexmidmenu {
     display: flex;
     flex-direction: column;
@@ -679,23 +643,13 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     margin: 3rem auto 6rem auto;
 }
 
-.midmenudiv {
-    width: 100%;
-    height: 4rem;
-    background-color: #06040E;
-    padding: 0.5rem 2rem 0.5rem 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .midmenua {
-    background-color: #06040E;
+    background-color: var(--darkblue);
     padding: 1.5rem;
+    color: white;
 }
 
-.floatright {
+.fa-chevron-right {
     float: right;
     font-size: 1rem;
 }
@@ -706,16 +660,10 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     margin-right: 1rem;
 }
 
-.midmenua {
-    color: white;
-    text-decoration: none;
-    font-family: var(--narrowheader);
-    text-transform: uppercase;
-}
 
 
 
-/*learning by doing*/
+
 .learningbydoingsection {
     background-color: whitesmoke;
     padding: 5rem 0 3rem 0;
@@ -746,12 +694,6 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     color: var(--yellow);
 }
 
-@media screen and (max-width: 1200px) {
-    .learningbydoingtopdiv {
-        height: 45vw;
-    }
-}
-
 .learningbydoingtopdiv > div {
     position: absolute;
 }
@@ -776,24 +718,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 .rightoverlap > img, .leftoverlap > img {
     width: 100%;
     height: auto;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     border-radius: 15px;
-}
-
-@media screen and (max-width: 600px) {
-    .leftoverlap {
-        display: none;
-    }
-
-    .rightoverlap {
-        top: 0;
-        left: 0;
-    }
-
-    .learningbydoingtopdiv {
-        height: 60vw;
-    }
-   
 }
 
 .learningbydoingflex {
@@ -810,11 +735,31 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 }
 
 
+
+@media screen and (max-width: 1200px) {
+    .learningbydoingtopdiv {
+        height: 45vw;
+    }
+}
+
 @media screen and (max-width: 600px) {
-    .learningbydoingflex {
-    flex-direction: column;
+    .leftoverlap {
+        display: none;
     }
 
+    .rightoverlap {
+        top: 0;
+        left: 0;
+    }
+
+    .learningbydoingtopdiv {
+        height: 60vw;
+    }
+   
+    .learningbydoingflex {
+        flex-direction: column;
+        }
+    
     .learningbydoingflex p:last-child {
         font-size: 0.8rem;
     }
@@ -822,14 +767,14 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 
 
 
-/*get involved index */
+
 
 .getinvolvedindexsection {
     height: fit-content;
     width: 100%;
     background-color: #c8c8e2;
     padding: 5rem 0 5rem 0;
-    margin: 0 0 3 0;
+    margin-bottom: 3rem;
 }
 
 .getinvolvedindexflex {
@@ -848,10 +793,6 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     background-color: white;
     flex: 30%;
     max-width: 260px;
-}
-
-.getinvolvedindexflex > div > img {
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .getinvolvedindexh2 {
@@ -887,13 +828,12 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 .blacksparrow {
     float: right;
     padding: 0.1rem 1rem 0.1rem 1rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .blacksparrow i {
     color: black;
-    font-size: 1.5rem;
 }
+
 
 @media screen and (max-width: 800px) {
     .getinvolvedindexflex > div {
@@ -923,12 +863,8 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     padding-right: 1.5rem;
 }
 
-.prefootermenu > div > a > i {
-    color: black;
-    font-size: 1.8rem;
-    display: block;
-    padding-bottom: 1rem;
-
+.prefootermenu > div {
+    text-align: center;
 }
 
 .prefootermenu > div > a {
@@ -937,12 +873,13 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     font-family: var(--robotoc);
 }
 
-.prefootermenu > div {
-    text-align: center;
+.prefootermenu > div > a > i {
+    color: black;
+    font-size: 1.8rem;
+    display: block;
+    padding-bottom: 1rem;
+
 }
-
-
-
 
 
 
@@ -957,7 +894,6 @@ footer {
     justify-content: space-between;
     gap: 1rem;
 }
-
 
 
 footer ul {
@@ -986,7 +922,7 @@ footer > div > ul > li:last-child {
     align-items: center;
 }
 
-.footericon {
+.midfooterdiv > div > i, .midfooterdivmobil > div > i {
     font-size: 2.2rem;
 }
 
@@ -1063,22 +999,9 @@ footer > div > ul > li:last-child {
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 1rem;    
     text-align: end;
     margin-bottom: 3rem;
-}
-
-mark {
-    text-decoration: underline;
-    background: none;
-}
-
-@media screen and (max-width: 981px) {
-    .locationflex {
-        justify-content: space-evenly;
-        text-align: center;
-    }
 }
 
 
@@ -1087,7 +1010,6 @@ mark {
     flex-direction: row;
     justify-content: space-between;
     width: 30rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     padding: 2rem;
     height: 208px;
     margin-top: 2rem;
@@ -1098,7 +1020,7 @@ mark {
     text-align: right;
 }
 
-.rightaline {
+.rightalinealways {
     text-align: right;
 }
 
@@ -1110,10 +1032,16 @@ mark {
 }
 
 
-
 @media screen and (max-width: 1070px) {
     .totalflex {
         justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 981px) {
+    .locationflex {
+        justify-content: space-evenly;
+        text-align: center;
     }
 }
 
@@ -1134,14 +1062,19 @@ mark {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin: 2rem 0 4rem 0;
 }
 
 .accessabilityflex > div {
     flex: 1;
     padding: 1rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+
+.accessabilityextra {
+    text-align: center;
+    margin: 3rem 0 6rem 0;
+    width: 100%;
 }
 
 @media screen and (max-width: 760px) {
@@ -1155,11 +1088,8 @@ mark {
     }
 }
 
-.accessabilityextra {
-    text-align: center;
-    margin: 3rem 0 6rem 0;
-    width: 100%;
-}
+
+
 
 
 .imagetextright, .imagetextleft {
@@ -1173,7 +1103,6 @@ mark {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     margin-bottom: 4rem;
 }
 
@@ -1189,12 +1118,20 @@ mark {
     margin: 0;
 }
 
-.breadprestaurant {
+.imagetextflex > div > p {
     text-align: justify;
 }
 
+
+.shoph3 {
+    text-align: center;
+    font-family: var(--robotoc);
+    margin-bottom: 2rem;
+}
+
+
 @media screen and (max-width: 780px) {
-    .breadprestaurant {
+    .imagetextflex > div > p {
        font-size: 0.8rem;
     }
     .imagetextright, .imagetextleft {
@@ -1216,13 +1153,8 @@ mark {
     
 }
 
-.shoph3 {
-    text-align: center;
-    font-family: var(--robotoc);
-    margin-block-end: 2rem;
-}
 
-
+/*-----------------------------fiks----------------------------------*/
 
 .bookingimg  {
     max-width: 400px;
@@ -1399,66 +1331,6 @@ mark {
 
 /*--------------------------------------------------explore------------------------------------------------------------------*/
 
-.navwithh1 {
-    height: fit-content;
-    position: relative;
-    padding: 1rem 4vw 0 4vw;
-    border-bottom: solid 10px var(--black);
-    margin-bottom: 1rem;
-}
-
-.h1headline {
-    margin: 3rem 0 0 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 6vw;
-    line-height: 3.9vw;
-    text-align: center;
-}
-
-@media screen and (max-width:1100px) {
-    .h1headline {
-        right: 26.5vw;
-        top: 5.4vw;
-    }
-}
-
-@media screen and (max-width:800px) {
-    .h1headline {
-        right: 36vw;
-        top: 5.2vw;
-    }
-}
-
-@media screen and (max-width:748px) {
-    .h1headline {
-        position: initial;
-    }
-}
-
-.currentsite {
-    border-bottom: 3px solid black;
-}
-
-.currentsite > a {
-    color: var(--yellow)
-}
-
-.undernav {
-    height: fit-content;
-    background-color: var(--purple);
-    color: white;
-    text-align: center;
-    padding: 1px 0 1.5px 0;
-    margin-bottom: 3rem;
-    font-size: 1.2vw;
-}
-
-.undernavul > li {
-    display: inline;
-    margin-right: 3rem;
-    text-transform: uppercase;
-}
 
 .exploremain {
     margin: 0 6vw 0 6vw;
@@ -1476,7 +1348,6 @@ mark {
 
 .clubdivright, .clubdivleft {
     flex: 40%;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .clubdivtext {
@@ -1485,20 +1356,20 @@ mark {
     height: 50vw;
 }
 
-.clubdivimageholiday {
+
+.clubdivimageyoungstar, .clubdivimageholiday {
     position: relative;
-    background-image: url(images.img/neonbrand-IF8B82QBCkM-unsplash_50.jpg);
     background-size: cover;
     width: 100%;
     height: 50vw;
 }
 
+.clubdivimageholiday {
+    background-image: url(images.img/neonbrand-IF8B82QBCkM-unsplash_50.jpg);
+}
+
 .clubdivimageyoungstar {
-    position: relative;
     background-image: url(images.img/nathan-dumlao-P5MXtYfgmmw-unsplash_27.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 50vw;
 }
 
 .clubdivimageholiday > h2, .clubdivimageyoungstar > h2 {
@@ -1518,20 +1389,6 @@ mark {
     right: 5px;
 }
 
-a.clubbutton {
-    padding: 1rem 2rem 1rem 2rem;
-    background-color: #8D8DA1;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.clubbutton {
-    margin: 2rem auto 0 auto;
-    text-align: center;
-}
-
 
 @media screen and (max-width:1200px) {
     .clubdivtext {
@@ -1540,17 +1397,12 @@ a.clubbutton {
     }
 }
 
-
 @media screen and (max-width:1000px) {
     .clubdivtext {
         flex: 50%;
         font-size: 0.68rem;
         padding: 1rem;
     }
-    .clubsection {
-        gap: 1rem;
-    }
-
     .clubsection {
         gap: 1rem;
         flex-direction: column;
@@ -1575,7 +1427,6 @@ a.clubbutton {
 .newsflex {
     display: flex;
     flex-direction: row;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     margin-top: 2rem;
 }
 
@@ -1599,6 +1450,16 @@ a.clubbutton {
     font-size: 1.4vw;
 }
 
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.reversed > .textright {
+    text-align: left;
+    padding: 1rem;
+}
+
+
 @media screen and (max-width:950px) {
 
     .newsflex {
@@ -1609,28 +1470,18 @@ a.clubbutton {
         padding: 1rem 1rem 1rem 1rem;
         font-size: 2.5vw;
     }
-}
-
-.reversed {
-    flex-direction: row-reverse;
-}
-
-.reversedtext {
-    text-align: left;
-    padding: 1rem;
-}
-
-@media screen and (max-width:950px) {
-
     .reversed {
         flex-direction: column;
     }
-    .reversedtext {
+    .reversed > .textright {
         text-align: center;
         padding: 1rem 1rem 1rem 1rem;
         font-size: 2.5vw;
     }
 }
+
+
+  
 
 .christmasexplore {
     background-image: url(images.img/anna-peipina-ihDzR6U2Gds-unsplash_36.jpg);
@@ -1639,9 +1490,8 @@ a.clubbutton {
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+    margin: 6rem 0 3rem 0;
     padding: 1rem;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
 }
 
 .christmasexploreinfo {
@@ -1657,6 +1507,8 @@ a.clubbutton {
     color: white;
     text-transform: uppercase;
     line-height: 8rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
 }
 
 .christmasexploreinfo2 {
@@ -1688,6 +1540,7 @@ a.clubbutton {
         margin: 0;
         padding: 0;
         line-height: 5rem;
+        font-size: 3rem;
     }
 
     .christmasexploreinfo2 {
@@ -1703,7 +1556,7 @@ a.clubbutton {
         gap: 1rem;
     }
     .christmash3 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 3.5rem;
     }
 
@@ -1719,10 +1572,13 @@ a.clubbutton {
         font-size: 0.7rem;
         flex-direction: column;
     }
-
     .christmasexplorediv {
         background-color: white;
         padding: 0.5rem;
+    }
+
+    .christmasbutton {
+        margin-top: 0.5rem;
     }
 }
 
@@ -1736,20 +1592,17 @@ a.clubbutton {
     margin-top: 3rem;
 }
 
-.educationexplorediv {
+.educationexplore > div {
     font-size: 0.8rem;
     padding: 4rem 2rem 2rem 2rem;
     background-color: #432922;
     width: 50vw;
     height: fit-content;
     color: white;
-  
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     text-align: center;
 }
 
@@ -1759,21 +1612,17 @@ a.clubbutton {
 }
 
 @media screen and (max-width:500px) {
-    .educationexplorediv {
+    .educationexplore > div  {
         width: 100%;
         box-shadow: none;
         padding: 2rem 1rem 1rem 1rem;
-
     }
 
     .educationexplore {
         background-color: #432922;
         background-image: none;
-       
     }
 }
-
-
 
 
 
@@ -1782,7 +1631,6 @@ a.clubbutton {
     background-size: cover;
     height: 590px;
     padding: 2rem;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1790,11 +1638,10 @@ a.clubbutton {
     gap: 10rem;
 }
 
-.researchersexplorediv {
+.researchersexplore > div {
     flex: 40%;
     max-width: 320px;
     height: 360px;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .researchersexploredivleft {
@@ -1805,11 +1652,10 @@ a.clubbutton {
 }
 
 
-
 .researchersexploredivleft > ul {
     list-style: none;
     padding: 0;
-    margin: 2rem 0 0 0;
+    margin-top: 2rem;
 }
 
 .researchersexploredivleft > ul > li {
@@ -1876,7 +1722,7 @@ a.clubbutton {
     margin-bottom: 3rem;
 }
 
-.contactinformationsectiondiv {
+.contactinformationsection > div {
     flex: 33%;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.856);
@@ -1884,7 +1730,7 @@ a.clubbutton {
     padding: 3rem 1rem 3rem 1rem ;
 }
 
-.contactinformationsectiondiv > h3 {
+.contactinformationsection > div > h3 {
     margin: 1rem 0 2rem 0;
 }
 
@@ -1914,10 +1760,10 @@ a.clubbutton {
         background-color: #8D8DA1;
         background-image: none;
         height: fit-content;
-        padding: 6vw 6vw 6vw 6vw;
-        
+        padding: 6vw;
     }
 }
+
 
 
 .minibook {
@@ -1926,7 +1772,6 @@ a.clubbutton {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     height: 100px;
     padding: 1rem 3rem 1rem 3rem;
     margin: 5rem 0 3rem 0;
@@ -1956,8 +1801,6 @@ a.clubbutton {
 
 
 
-
-
 .clubmembertotalsection {
     display: flex;
     flex-direction: row;
@@ -1967,13 +1810,11 @@ a.clubbutton {
 }
 
 
-
 .clubmembersection {
     display: flex;
     flex-direction: row;
     flex: 40%;
     justify-content: space-between;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     padding: 1.5rem;
 }
 
@@ -1996,8 +1837,6 @@ a.clubbutton {
     width: 140px;
     position: relative;
     text-align: center;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-
 }
 
 .circeldiv > p {
@@ -2005,7 +1844,6 @@ a.clubbutton {
     margin: 0;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -2066,6 +1904,8 @@ a.clubbutton {
     }
 }
 
+
+
 .contactformsection {
     width: 70%;
     margin: 5rem auto 5rem auto;
@@ -2085,17 +1925,12 @@ a.clubbutton {
     width: 250px;
     height: 2rem;
     border: none;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px
 }
 
 textarea {
     border: none;
     padding-left: 0.5rem;
     padding-top: 0.5rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     width: 100%;
     font-family: sans-serif;
 }
@@ -2108,7 +1943,6 @@ button {
     height: 2rem;
     background-color: var(--purple);
     color: white;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     text-transform: uppercase;
     border: none;
     font-family: var(--narrowheader);
@@ -2124,11 +1958,15 @@ button {
 fieldset {
     border: 2px solid var(--yellow);
     font-family: sans-serif;
-    color: var(--yellow);
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
 }
+
+fieldset > legend > h3 {
+    color: var(--yellow);
+}
+
 
 @media screen and (max-width:1200px) {
     .contactformsection {
@@ -2158,7 +1996,6 @@ fieldset {
 .contact-getinvolvedsection {
     height: fit-content;
     width: 100%;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2194,13 +2031,11 @@ fieldset {
 
 .getinvolvedimage {
     margin-bottom: 1rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .getinvolvedimage img {
     display: block;
 }
-
 
 .donatesponsorsection {
     display: flex;
@@ -2217,8 +2052,7 @@ fieldset {
     flex: 30%;
 }
 
-.donatesponsordivs {
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+.donatesponsorsection > div {
     height: 300px;
     padding: 2rem;
     text-align: center;
@@ -2236,6 +2070,4 @@ fieldset {
     }
 }
 
-.h3marg {
-    margin-bottom: 2rem;
-}
+
