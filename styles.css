@@ -900,13 +900,13 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 
 .blacksparrow {
     float: right;
-    padding: 0.1rem 1rem 0.1rem 1rem;
+    padding: 0.3rem 1.3rem 0.3rem 1.3rem;
 }
 
 
 .blacksparrow i {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .blacksparrow:hover > i {
