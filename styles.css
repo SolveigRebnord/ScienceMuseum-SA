@@ -903,12 +903,10 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     padding: 0.1rem 1rem 0.1rem 1rem;
 }
 
-.blacksparrow:hover {
-
-}
 
 .blacksparrow i {
     color: black;
+    font-size: 1rem;
 }
 
 .blacksparrow:hover > i {
