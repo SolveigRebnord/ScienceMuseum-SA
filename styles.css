@@ -65,6 +65,12 @@ h1, h2, h3 {
     font-family: var(--robotoc);
 }
 
+.breadcrumbs > a:hover {
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
+
 
 .borderbuttonsmall {
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -95,6 +101,12 @@ h1, h2, h3 {
     letter-spacing: 1px;
 }
 
+.borderbuttonbig:hover {
+    background-color: whitesmoke;
+    color: var(--purple);
+    transition: ease-in 0.2s;
+}
+
 
 
 .fullbutton {
@@ -110,6 +122,12 @@ h1, h2, h3 {
     margin-top: 2rem;
 }
 
+.fullbutton:hover {
+    background-color: white;
+    color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    transition: ease-in 0.2s;
+}
 
 .tothetop {
     text-decoration: none;
@@ -130,7 +148,6 @@ h1, h2, h3 {
     font-size: 1.5rem;
     margin-left: 0.4rem;
     transition: ease-in 0.3s;
-
 }
 
 
@@ -145,6 +162,11 @@ h1, h2, h3 {
     font-family: var(--narrowheader);
     border-bottom: 3px solid var(--yellow);
     padding-bottom: 0.4rem;
+}
+
+.arrowbutton:hover > .fa-arrow-alt-circle-right {
+    margin-left: 1rem;
+    transition: ease 0.3s;
 }
 
 .purplebutton {
@@ -522,9 +544,13 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     padding: 1rem 0 1rem 3vw;
     margin: 1.5rem 0 1rem 0;
     background-color: var(--purple);
-    
     color: white;
     text-transform: uppercase;
+}
+
+.underheadermenu a:hover {
+    border-bottom: solid 2px white;
+    transition: ease-in 0.2s;
 }
 
 .underheadermenu > ul {
@@ -631,7 +657,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     display: flex;
     flex-direction: row;
     align-items:center;
-    background-color: whitesmoke;
+    background-color: rgb(225, 228, 238);
     padding: 3rem 0 3rem 0;
 
 }
@@ -720,7 +746,7 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 
 
 .learningbydoingsection {
-    background-color: whitesmoke;
+    background-color: rgb(225, 228, 238);
     padding: 5rem 0 3rem 0;
 }
 
@@ -1804,6 +1830,11 @@ footer > div > ul > li:last-child {
     padding: 3rem 1rem 3rem 1rem ;
 }
 
+.contactinformationsection > div:hover > .darkfas {
+    font-size: 2.5rem;
+}
+
+
 .contactinformationsection > div > h3 {
     margin: 1rem 0 2rem 0;
 }
@@ -1919,6 +1950,11 @@ footer > div > ul > li:last-child {
     text-align: center;
 }
 
+.circeldiv:hover {
+    border-radius: 20%;
+    transition: ease-in-out 0.3s;
+}
+
 .circeldiv > p {
     position: absolute;
     margin: 0;
@@ -2029,6 +2065,13 @@ button {
     border: none;
     font-family: var(--narrowheader);
     letter-spacing: 1px;
+}
+
+button:hover {
+    border: solid 1px var(--purple);
+    background-color: white;
+    color: var(--purple);
+    transition: ease-in 0.5s;
 }
 
 .textareabutton {
