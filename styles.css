@@ -1039,6 +1039,7 @@ footer > div > ul > li:last-child {
 
     .midfooterdivmobil {
         margin-bottom: 2rem;
+        gap: 1.5rem;
     }
 }
 
