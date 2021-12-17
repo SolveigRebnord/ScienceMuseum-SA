@@ -1039,6 +1039,10 @@ footer > div > ul > li:last-child {
     .midfooterdiv {
         display: none;
     }
+
+    .midfooterdivmobil {
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (min-width: 820px) {
