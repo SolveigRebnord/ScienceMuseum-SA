@@ -78,6 +78,11 @@ h1, h2, h3 {
     letter-spacing: 1px;
 }
 
+.borderbuttonsmall:hover {
+    font-size: 1rem;
+    transition: ease-in 0.1s;
+}
+
 
 .borderbuttonbig {
     padding: 0.8rem 2.5rem 0.8rem 2.5rem;
@@ -89,6 +94,8 @@ h1, h2, h3 {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
+
 
 .fullbutton {
     display: inline-block;
@@ -103,8 +110,9 @@ h1, h2, h3 {
     margin-top: 2rem;
 }
 
+
 .tothetop {
-text-decoration: none;
+    text-decoration: none;
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
@@ -112,6 +120,20 @@ text-decoration: none;
     border-bottom: 1px solid white;
     padding-bottom: 0.4rem;
 }
+
+.tothetop:hover {
+    color: var(--yellow);
+    border-bottom: var(--yellow);
+}
+
+.tothetop:hover > .far {
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+    transition: ease-in 0.3s;
+
+}
+
+
 
 .arrowbutton {
     display: inline-block;
@@ -224,6 +246,10 @@ header {
     margin-right: 4rem;
 }
 
+.mid-menu > ul > li:hover {
+text-decoration: underline;
+}
+
 .mid-menu > ul > li:last-child {
     margin-right: 0;
 }
@@ -240,6 +266,7 @@ header {
     font-family: var(--narrowheader);
     font-size: 1.2rem;
 }
+
 
 a.currentsite {
     color: var(--yellow);
@@ -338,6 +365,13 @@ input#search:hover {
     letter-spacing: 2px;
     font-size: 1.1rem;
 }
+
+#headerbutton:hover {
+    font-size: 1.5rem;
+    transition: ease-in 0.2s;
+}
+
+
 
     
 
@@ -540,6 +574,13 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     max-width: 140px;
 }
 
+.collectionicons > div:hover {
+    max-width: 160px;
+    font-weight: bold;
+    transition: ease-in 0.1s;
+}
+
+
 
 .collectionicons > div > p {
     text-transform: uppercase;
@@ -649,10 +690,22 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     color: white;
 }
 
+.midmenua:hover {
+    background-color: white;
+    color: var(--darkblue);
+    border: 2px var(--darkblue) solid;
+}
+
+
 .fa-chevron-right {
     float: right;
     font-size: 1rem;
 }
+
+.midmenua:hover > .fa-chevron-right {
+    color: var(--darkblue);
+}
+
 
 .guideicon {
     color: white;
@@ -660,7 +713,9 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     margin-right: 1rem;
 }
 
-
+.midmenua:hover > .guideicon {
+    color: var(--darkblue);
+}
 
 
 
@@ -676,6 +731,10 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+
 
 .learningbydoingbottomdiv {
     margin-bottom: 2rem;
@@ -698,9 +757,6 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     position: absolute;
 }
 
-.leftoverlap > img {
-    opacity: 60%;
-}
 
 .leftoverlap, .rightoverlap {
     max-width: 500px;
@@ -714,6 +770,19 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
 .leftoverlap {
     right: 45%;
 }
+
+.learningbydoingtopdiv:hover > .leftoverlap img {
+    animation-name: fadeout;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+    to {opacity: 0%};
+    from {opacity: 40%};
+}
+
 
 .rightoverlap > img, .leftoverlap > img {
     width: 100%;
@@ -774,7 +843,6 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     width: 100%;
     background-color: #c8c8e2;
     padding: 5rem 0 5rem 0;
-    margin-bottom: 3rem;
 }
 
 .getinvolvedindexflex {
@@ -793,6 +861,11 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     background-color: white;
     flex: 30%;
     max-width: 260px;
+}
+
+.getinvolvedindexflex > div:hover {
+    border-radius: 30px;
+    transition: ease-out 0.2s;
 }
 
 .getinvolvedindexh2 {
@@ -830,10 +903,17 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     padding: 0.1rem 1rem 0.1rem 1rem;
 }
 
+.blacksparrow:hover {
+
+}
+
 .blacksparrow i {
     color: black;
 }
 
+.blacksparrow:hover > i {
+    font-size: 1.3rem;
+}
 
 @media screen and (max-width: 800px) {
     .getinvolvedindexflex > div {
@@ -878,8 +958,13 @@ input#burger-menu:checked ~ nav.burger-menu-nav {
     font-size: 1.8rem;
     display: block;
     padding-bottom: 1rem;
-
 }
+
+.prefootermenu > div > a > i:hover {
+    font-size: 2.5rem;
+    transition: ease-in 0.1s;
+}
+
 
 
 
@@ -1337,7 +1422,7 @@ footer > div > ul > li:last-child {
 }
 
 .clubdivtext {
-    padding: 5rem;
+    padding: 2rem;
     width: 100%;
     height: 50vw;
 }
@@ -1376,10 +1461,13 @@ footer > div > ul > li:last-child {
 }
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1220px) {
     .clubdivtext {
-        padding: 1rem;
-      
+        padding: 1.5rem;
+    }
+
+    .hideforspace {
+        display: none;
     }
 }
 
